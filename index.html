@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1363463228952376');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1"
+    alt=""></noscript>
+    <!-- End Meta Pixel Code -->
+    <title>Lifting Facial - Dr. Leandro Vila</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        surface: "#1c1b1b",
+                        "surface-container-low": "#131313",
+                        "surface-container-high": "#282828",
+                        primary: "#2EC4B6",
+                        "on-primary": "#003531",
+                        secondary: "#c8c6c6",
+                        outline: "#3c4947",
+                        "on-surface": "#e5e2e1",
+                        "on-surface-variant": "#c4c6cf",
+                        "accent-teal": "#2EC4B6"
+                    },
+                    fontFamily: {
+                        montserrat: ["Montserrat", "sans-serif"]
+                    },
+                    borderRadius: {
+                        sm: "4px"
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #1c1b1b; color: #e5e2e1; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .teal-glow {
+            box-shadow: 0 0 30px rgba(46, 196, 182, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-accent-teal selection:text-on-primary">
+    <nav class="fixed top-0 w-full z-50 bg-[#1c1b1b]/80 backdrop-blur-md shadow-[0_0_40px_rgba(46,196,182,0.05)] transition-all duration-300">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-4 md:px-8 py-5 md:py-6 gap-4">
+            <div class="font-montserrat font-bold text-white text-lg md:text-2xl tracking-tight">Dr. Leandro Vila</div>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="font-montserrat uppercase text-[0.75rem] tracking-[0.05em] text-[#2EC4B6] border-b-2 border-[#2EC4B6] pb-1" href="#inicio">Inicio</a>
+                <a class="font-montserrat uppercase text-[0.75rem] tracking-[0.05em] text-[#c8c6c6] hover:text-[#2EC4B6] transition-all" href="#procedimientos">Servicios</a>
+                <a class="font-montserrat uppercase text-[0.75rem] tracking-[0.05em] text-[#c8c6c6] hover:text-[#2EC4B6] transition-all" href="#filosofia">Sobre mi</a>
+                <a class="font-montserrat uppercase text-[0.75rem] tracking-[0.05em] text-[#c8c6c6] hover:text-[#2EC4B6] transition-all" href="#contacto">Contacto</a>
+            </div>
+            <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20reservar%20una%20consulta." class="bg-[#2EC4B6] text-[#003531] px-4 md:px-6 py-2.5 rounded-sm text-[0.65rem] md:text-[0.75rem] uppercase tracking-[0.1em] font-bold hover:scale-105 transition-transform duration-300 active:scale-95 whitespace-nowrap">
+                Reservar Consulta
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="inicio" class="relative min-h-screen flex items-center pt-28 pb-12 overflow-hidden">
+            <!-- Video de Fondo en Loop (Muted, compressed, colorful but dimmed) -->
+            <video id="video-fondo" class="absolute inset-0 w-full h-full object-cover z-0 opacity-60" autoplay muted loop playsinline preload="auto">
+                <source src="./intro_compressed.mp4" type="video/mp4">
+            </video>
+            
+            <!-- Capa de Oscurecimiento para Legibilidad Suprema -->
+            <div class="absolute inset-0 bg-black/60 z-0 pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#1c1b1b] via-transparent to-[#1c1b1b]/50 z-0 pointer-events-none"></div>
+            
+            <!-- Contenido del Hero Centrado y Limpio -->
+            <div class="max-w-4xl mx-auto w-full px-4 text-center relative z-10 flex flex-col items-center justify-center">
+                <p class="font-montserrat text-[0.75rem] uppercase tracking-[0.3em] text-accent-teal mb-6 font-semibold">Lifting endoscopico y deep plane facelift</p>
+                <h1 class="font-montserrat text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white leading-none mb-4 tracking-tight font-extrabold uppercase">Dr. Leandro Vila</h1>
+                <h2 class="font-montserrat text-xl sm:text-2xl md:text-3xl text-accent-teal uppercase tracking-[0.25em] font-semibold mb-8">Cirujano Plástico</h2>
+                <p class="text-on-surface-variant text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto font-light mb-12">
+                    Rejuvenecimiento facial avanzado con técnicas de reposicionamiento profundo para resultados naturales, elegantes y personalizados.
+                </p>
+                <div class="flex items-center justify-center">
+                    <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20reservar%20una%20consulta." class="bg-accent-teal text-on-primary px-8 sm:px-10 py-4 sm:py-5 rounded-sm text-[0.7rem] sm:text-xs uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all active:scale-95 duration-200">
+                        Reservar Consulta
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="filosofia" class="py-24 md:py-40 bg-surface-container-low">
+            <div class="max-w-7xl mx-auto px-4 md:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-24 items-center">
+                    <div class="md:col-span-6 relative">
+                        <div class="aspect-[4/5] overflow-hidden rounded-sm relative group/retrato cursor-pointer shadow-2xl">
+                            <div class="absolute -inset-4 border border-accent-teal/10 rounded-sm group-hover/retrato:border-accent-teal/30 transition-colors duration-500 z-10"></div>
+                            <img alt="Retrato profesional del Dr. Leandro Vila" class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-1000 grayscale hover:grayscale-0 contrast-125 hover:scale-[1.02]" src="./home-1.jpg">
+                        </div>
+                        <!-- Matricula Nacional Card -->
+                        <div class="absolute -bottom-8 left-0 md:-left-10 bg-surface-container-high px-6 py-7 md:px-8 md:py-9 border-l-4 border-accent-teal z-20 max-w-[220px] md:max-w-[240px] shadow-xl">
+                            <p class="font-montserrat text-2xl md:text-3xl text-white font-bold mb-2">M.N 147814</p>
+                            <p class="text-[0.65rem] text-accent-teal font-bold uppercase tracking-[0.2em]">Matricula Nacional</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-6 flex flex-col justify-center">
+                        <p class="font-montserrat text-[0.7rem] uppercase tracking-[0.3em] text-accent-teal mb-6 font-semibold">Sobre mi / Nuestra filosofia</p>
+                        <h2 class="font-montserrat text-4xl md:text-6xl text-white mb-10 leading-tight">Rejuvenecer sin perder tu <span class="italic text-accent-teal">expresion</span></h2>
+                        <div class="space-y-6 text-on-surface-variant leading-relaxed text-base md:text-lg font-light">
+                            <p>Cada procedimiento esta pensado para respetar tu esencia, no para transformarte en alguien distinto.</p>
+                            <ul class="space-y-4 mt-6">
+                                <li class="flex items-start gap-3"><span class="text-accent-teal">✓</span> Evaluación 100% personalizada presencial u online.</li>
+                                <li class="flex items-start gap-3"><span class="text-accent-teal">✓</span> Reposicionamiento facial profundo, no solo tension de piel.</li>
+                                <li class="flex items-start gap-3"><span class="text-accent-teal">✓</span> Resultados sutiles, elegantes y reales.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-16 pt-12 md:pt-16 border-t border-outline flex gap-8 md:gap-16">
+                            <div>
+                                <h4 class="font-montserrat text-4xl md:text-5xl text-accent-teal font-bold mb-2">+15</h4>
+                                <p class="text-[0.65rem] uppercase tracking-widest text-on-surface-variant font-bold">Años de formación</p>
+                            </div>
+                            <div>
+                                <h4 class="font-montserrat text-4xl md:text-5xl text-accent-teal font-bold mb-2">+500</h4>
+                                <p class="text-[0.65rem] uppercase tracking-widest text-on-surface-variant font-bold">Procedimientos realizados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="procedimientos" class="py-24 md:py-40">
+            <div class="max-w-7xl mx-auto px-4 md:px-8">
+                <div class="flex justify-between items-baseline mb-16 md:mb-24">
+                    <div>
+                        <p class="font-montserrat text-[0.7rem] uppercase tracking-[0.3em] text-accent-teal mb-4 font-semibold">Atencion especializada</p>
+                        <h2 class="font-montserrat text-4xl md:text-6xl text-white">Lifting Facial Avanzado:</h2>
+                    </div>
+                    <span class="hidden md:flex items-center gap-4 text-white font-bold text-xs uppercase tracking-widest group">
+                        <span class="material-symbols-outlined text-accent-teal text-lg group-hover:translate-x-2 transition-transform">east</span>
+                    </span>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="relative w-full aspect-video rounded-sm overflow-hidden border border-outline/30 bg-[#111] shadow-2xl group transition-all duration-500 hover:shadow-[0_0_50px_rgba(46,196,182,0.15)] hover:border-accent-teal/50">
+                        <iframe 
+                            src="https://www.youtube-nocookie.com/embed/jE-ngEVwYZs" 
+                            title="Lifting Endoscópico" 
+                            class="absolute inset-0 w-full h-full" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <h3 class="font-montserrat text-3xl md:text-4xl text-white mb-4 font-bold">Lifting Endoscópico</h3>
+                        <p class="text-on-surface-variant text-base md:text-lg leading-relaxed font-light max-w-2xl mx-auto">
+                            Técnica mínimamente invasiva de rejuvenecimiento facial. A través de pequeñas incisiones ocultas en el cuero cabelludo, tratamos el tercio superior y medio del rostro, logrando resultados sumamente naturales, elegantes y duraderos con una recuperación más rápida.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 md:py-40 bg-accent-teal">
+            <div class="max-w-5xl mx-auto px-4 md:px-8 text-center">
+                <span class="material-symbols-outlined text-on-primary text-6xl mb-12" style='font-variation-settings: "FILL" 1;'>format_quote</span>
+                <div class="relative min-h-[300px] md:min-h-[260px]" data-testimonial-slider>
+                    <article class="testimonial-slide space-y-6 transition-opacity duration-500" data-testimonial-slide>
+                        <div class="font-montserrat text-xl md:text-3xl text-on-primary leading-relaxed font-medium space-y-6">
+                            <p>Desde la primera consulta hasta el alta, todo fue impecable: profesionalismo, calidez y un acompañamiento constante.</p>
+                            <p>Quiero agradecer especialmente al Dr. Vila, por su excelente trabajo, su claridad para explicar cada paso y la tranquilidad que transmite.</p>
+                            <p>La atención, de principio a fin, fue de lo mejor. Súper recomendados, no solo por su calidad profesional sino también por la calidad humana.</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="flex gap-1 mb-4" aria-label="5 estrellas">
+                                <span class="material-symbols-outlined text-on-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-on-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-on-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-on-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-on-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+                            </div>
+                            <p class="text-on-primary font-black tracking-[0.2em] text-[0.75rem] uppercase">Petu Baez</p>
+                            <p class="text-on-primary/70 text-[0.65rem] uppercase tracking-widest mt-1">Opinión de Google</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-24 md:py-40 bg-surface">
+            <div class="max-w-7xl mx-auto px-4 md:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+                    <div>
+                        <p class="font-montserrat text-[0.7rem] uppercase tracking-[0.3em] text-accent-teal mb-6 font-semibold">Nuestra ubicacion</p>
+                        <h2 class="font-montserrat text-4xl md:text-5xl text-white mb-8 font-bold">Visitenos en <br><span class="italic font-light">Buenos Aires</span></h2>
+                        <div class="space-y-6 text-on-surface-variant font-light">
+                            <p class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-accent-teal mt-1">location_on</span>
+                                Aimé Painé 1665, C1107 Ciudad Autónoma de Buenos Aires, Argentina
+                            </p>
+                            <p class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-accent-teal mt-1">call</span>
+                                011 15-3958-3670
+                            </p>
+                            <p class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-accent-teal mt-1">schedule</span>
+                                Abierto: Lunes a Viernes de 9:00 a 19:00
+                            </p>
+                        </div>
+                        <a href="https://maps.google.com/?q=Aim%C3%A9%20Pain%C3%A9%201665%20Buenos%20Aires" target="_blank" rel="noreferrer" class="inline-block mt-12 border border-accent-teal text-accent-teal px-8 py-4 rounded-sm text-xs uppercase tracking-widest font-bold hover:bg-accent-teal hover:text-on-primary transition-all">
+                            Como llegar
+                        </a>
+                    </div>
+                    <div class="relative rounded-sm overflow-hidden border border-outline/20 shadow-2xl">
+                        <iframe title="Mapa de Aimé Painé 1665, Buenos Aires" class="w-full h-[380px] md:h-[500px] grayscale brightness-90" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Aim%C3%A9%20Pain%C3%A9%201665%2C%20C1107%20Ciudad%20Aut%C3%B3noma%20de%20Buenos%20Aires%2C%20Argentina&output=embed"></iframe>
+                        <div class="absolute inset-0 pointer-events-none border-4 border-accent-teal/10"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 md:py-40 bg-surface-container-low">
+            <div class="max-w-7xl mx-auto px-4 md:px-8">
+                <div class="bg-surface-container-high rounded-sm p-10 md:p-24 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-16 border border-outline/10">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-accent-teal/5 blur-[120px]"></div>
+                    <div class="relative z-10 max-w-2xl">
+                        <h2 class="font-montserrat text-4xl md:text-7xl text-white mb-8 md:mb-10 leading-[1.1] font-extrabold">Planifiquemos tu <br><span class="italic font-light text-accent-teal">cambio</span> hoy.</h2>
+                        <p class="text-on-surface-variant text-lg md:text-xl font-light leading-relaxed mb-10 md:mb-12">
+                            Toda transformación comienza con una conversación. Programemos tu consulta para evaluar si el lifting endoscópico o deep plane facelift es la mejor opción para tu rostro.
+                        </p>
+                        <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20reservar%20una%20cita." class="inline-block bg-accent-teal text-on-primary px-10 md:px-12 py-5 md:py-6 rounded-sm text-[0.7rem] md:text-xs uppercase tracking-[0.2em] font-black hover:scale-105 transition-transform duration-300 teal-glow">
+                            Reservar su cita
+                        </a>
+                    </div>
+                    <div class="relative z-10 w-full md:w-80 aspect-square flex items-center justify-center">
+                        <div class="absolute inset-0 border border-accent-teal/20 rounded-full animate-[spin_20s_linear_infinite]"></div>
+                        <div class="text-center p-8">
+                            <span class="material-symbols-outlined text-accent-teal text-4xl mb-4">schedule</span>
+                            <p class="font-montserrat text-2xl text-white italic">Disponibilidad Clinica</p>
+                            <p class="text-[0.6rem] uppercase tracking-widest text-accent-teal mt-3 font-bold">Proxima cita en 48 horas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#131313] w-full py-16 px-4 md:px-8 border-t border-[#3c4947]/15">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+            <div class="col-span-1 flex flex-col gap-6">
+                <div class="font-montserrat font-bold text-white text-xl opacity-90 tracking-tight">Dr. Leandro Vila</div>
+                <p class="font-montserrat text-sm text-[#c8c6c6] leading-relaxed max-w-xs">
+                    Excelencia medica mediante precision clinica. Procedimientos quirurgicos avanzados con resultados naturales.
+                </p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-montserrat uppercase text-[0.65rem] tracking-widest text-[#2EC4B6] mb-2 font-bold">Menu</h4>
+                <a class="font-montserrat text-sm text-[#c8c6c6] hover:text-white hover:underline decoration-[#2EC4B6] underline-offset-4 transition-colors duration-200" href="#inicio">Inicio</a>
+                <a class="font-montserrat text-sm text-[#c8c6c6] hover:text-white hover:underline decoration-[#2EC4B6] underline-offset-4 transition-colors duration-200" href="#procedimientos">Servicios</a>
+                <a class="font-montserrat text-sm text-[#c8c6c6] hover:text-white hover:underline decoration-[#2EC4B6] underline-offset-4 transition-colors duration-200" href="#filosofia">Sobre mi</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-montserrat uppercase text-[0.65rem] tracking-widest text-[#2EC4B6] mb-2 font-bold">Atencion</h4>
+                <a class="font-montserrat text-sm text-[#c8c6c6] hover:text-white hover:underline decoration-[#2EC4B6] underline-offset-4 transition-colors duration-200" href="mailto:drleandrovila@gmail.com">Consultas</a>
+                <a class="font-montserrat text-sm text-[#c8c6c6] hover:text-white hover:underline decoration-[#2EC4B6] underline-offset-4 transition-colors duration-200" href="#contacto">Ubicacion</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-montserrat uppercase text-[0.65rem] tracking-widest text-[#2EC4B6] mb-2 font-bold">Legal y social</h4>
+                <a class="font-montserrat text-sm text-[#c8c6c6] hover:text-white hover:underline decoration-[#2EC4B6] underline-offset-4 transition-colors duration-200" href="https://www.instagram.com/drleandrovila" target="_blank" rel="noreferrer">Instagram</a>
+                <a class="font-montserrat text-sm text-[#c8c6c6] hover:text-white hover:underline decoration-[#2EC4B6] underline-offset-4 transition-colors duration-200" href="https://www.youtube.com/@drleandrovila" target="_blank" rel="noreferrer">YouTube</a>
+                <a class="font-montserrat text-sm text-[#c8c6c6] hover:text-white hover:underline decoration-[#2EC4B6] underline-offset-4 transition-colors duration-200" href="#inicio">Politica de privacidad</a>
+                <a class="font-montserrat text-sm text-[#c8c6c6] hover:text-white hover:underline decoration-[#2EC4B6] underline-offset-4 transition-colors duration-200" href="#inicio">Terminos de servicio</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-[#3c4947]/10">
+            <p class="font-montserrat text-[0.65rem] text-[#c8c6c6] uppercase tracking-widest opacity-60">
+                © 2024 Dr. Leandro Vila. Excelencia medica a traves de la precision clinica.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+</body>
+</html>
