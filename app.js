@@ -51,4 +51,49 @@ document.addEventListener("DOMContentLoaded", () => {
         nextButton.addEventListener("click", () => showSlide(currentSlide + 1));
         showSlide(0);
     }
+
+    // FAQ Accordion Logic
+    const faqItems = document.querySelectorAll("[data-faq-item]");
+    faqItems.forEach((item) => {
+        const toggle = item.querySelector("[data-faq-toggle]");
+        const content = item.querySelector("[data-faq-content]");
+        const icon = item.querySelector("[data-faq-icon]");
+
+        if (toggle && content) {
+            toggle.addEventListener("click", () => {
+                const isOpen = !content.classList.contains("max-h-0");
+
+                // Close all other open FAQ items first for accordion effect
+                faqItems.forEach((otherItem) => {
+                    if (otherItem !== item) {
+                        const otherContent = otherItem.querySelector("[data-faq-content]");
+                        const otherIcon = otherItem.querySelector("[data-faq-icon]");
+                        if (otherContent && !otherContent.classList.contains("max-h-0")) {
+                            otherContent.style.maxHeight = null;
+                            otherContent.classList.add("max-h-0");
+                            if (otherIcon) {
+                                otherIcon.classList.remove("rotate-180");
+                            }
+                        }
+                    }
+                });
+
+                // Toggle current item
+                if (isOpen) {
+                    content.style.maxHeight = null;
+                    content.classList.add("max-h-0");
+                    if (icon) {
+                        icon.classList.remove("rotate-180");
+                    }
+                } else {
+                    // Set max-height to scrollHeight for a smooth transition
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    content.classList.remove("max-h-0");
+                    if (icon) {
+                        icon.classList.add("rotate-180");
+                    }
+                }
+            });
+        }
+    });
 });
