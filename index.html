@@ -60,6 +60,23 @@
             box-shadow: 0 0 30px rgba(46, 196, 182, 0.1);
         }
     </style>
+    <!-- Meta Pixel VILA CRM Clientify -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3451415908359744');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3451415908359744&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- Fin Meta Pixel -->
 </head>
 <body class="bg-surface text-on-surface selection:bg-accent-teal selection:text-on-primary">
     <nav class="fixed top-0 w-full z-50 bg-[#1c1b1b]/80 backdrop-blur-md shadow-[0_0_40px_rgba(46,196,182,0.05)] transition-all duration-300">
@@ -72,7 +89,7 @@
                 <a class="font-montserrat uppercase text-[0.75rem] tracking-[0.05em] text-[#c8c6c6] hover:text-[#2EC4B6] transition-all" href="#preguntas">FAQ</a>
                 <a class="font-montserrat uppercase text-[0.75rem] tracking-[0.05em] text-[#c8c6c6] hover:text-[#2EC4B6] transition-all" href="#contacto">Contacto</a>
             </div>
-            <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20reservar%20una%20consulta." class="bg-[#2EC4B6] text-[#003531] px-4 md:px-6 py-2.5 rounded-sm text-[0.65rem] md:text-[0.75rem] uppercase tracking-[0.1em] font-bold hover:scale-105 transition-transform duration-300 active:scale-95 whitespace-nowrap">
+            <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20reservar%20una%20consulta." onclick="fbq('track', 'Contact')" class="bg-[#2EC4B6] text-[#003531] px-4 md:px-6 py-2.5 rounded-sm text-[0.65rem] md:text-[0.75rem] uppercase tracking-[0.1em] font-bold hover:scale-105 transition-transform duration-300 active:scale-95 whitespace-nowrap">
                 Reservar Consulta
             </a>
         </div>
@@ -98,7 +115,7 @@
                     Rejuvenecimiento facial avanzado con técnicas de reposicionamiento profundo para resultados naturales, elegantes y personalizados.
                 </p>
                 <div class="flex items-center justify-center">
-                    <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20reservar%20una%20consulta." class="bg-accent-teal text-on-primary px-8 sm:px-10 py-4 sm:py-5 rounded-sm text-[0.7rem] sm:text-xs uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all active:scale-95 duration-200">
+                    <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20reservar%20una%20consulta." onclick="fbq('track', 'Contact')" class="bg-accent-teal text-on-primary px-8 sm:px-10 py-4 sm:py-5 rounded-sm text-[0.7rem] sm:text-xs uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all active:scale-95 duration-200">
                         Reservar Consulta
                     </a>
                 </div>
@@ -219,7 +236,7 @@
                         </div>
                         
                         <div class="mt-12">
-                            <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20consultar%20sobre%20el%20tratamiento%20de%20Ponytail%20y%20Rinoplastia." class="inline-block border border-accent-teal text-accent-teal px-8 py-4 rounded-sm text-xs uppercase tracking-widest font-bold hover:bg-accent-teal hover:text-on-primary transition-all duration-300">
+                            <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20consultar%20sobre%20el%20tratamiento%20de%20Ponytail%20y%20Rinoplastia." onclick="fbq('track', 'Contact')" class="inline-block border border-accent-teal text-accent-teal px-8 py-4 rounded-sm text-xs uppercase tracking-widest font-bold hover:bg-accent-teal hover:text-on-primary transition-all duration-300">
                                 Consultar por este caso
                             </a>
                         </div>
@@ -383,7 +400,7 @@
                         <p class="text-on-surface-variant text-lg md:text-xl font-light leading-relaxed mb-10 md:mb-12">
                             Toda transformación comienza con una conversación. Programemos tu consulta para evaluar si el lifting endoscópico o deep plane facelift es la mejor opción para tu rostro.
                         </p>
-                        <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20reservar%20una%20cita." class="inline-block bg-accent-teal text-on-primary px-10 md:px-12 py-5 md:py-6 rounded-sm text-[0.7rem] md:text-xs uppercase tracking-[0.2em] font-black hover:scale-105 transition-transform duration-300 teal-glow">
+                        <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20reservar%20una%20cita." onclick="fbq('track', 'Contact')" class="inline-block bg-accent-teal text-on-primary px-10 md:px-12 py-5 md:py-6 rounded-sm text-[0.7rem] md:text-xs uppercase tracking-[0.2em] font-black hover:scale-105 transition-transform duration-300 teal-glow">
                             Reservar su cita
                         </a>
                     </div>
