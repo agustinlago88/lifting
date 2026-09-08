@@ -1,55 +1,74 @@
-﻿# Dr. Leandro Vila - Cirujano Plástico Facial en Buenos Aires
+﻿---
+dominio_principal: "https://lifting.drleandrovila.com"
+cms_o_stack: "HTML5 + Tailwind CSS + Vanilla JS (GitHub Pages)"
+repo_o_acceso: "https://github.com/agustinlago88/lifting"
+nombre_completo: "Dr. Leandro Vila"
+matricula: "MN 147814"
+titulo_y_universidad: "Médico Cirujano Plástico"
+especialidad_certificada: "Cirugía Plástica, Estética y Reparadora"
+membresias: ["SACPER"]
+anios_experiencia: "+15 años de formación médica (+500 procedimientos realizados)"
+consultorios:
+  - nombre: "Consultorio Dr. Leandro Vila - Puerto Madero"
+    direccion: "Aimé Painé 1665, Puerto Madero, C1107 Ciudad Autónoma de Buenos Aires (CABA), Argentina"
+    telefono: "011 15-3958-3670"
+    whatsapp: "+54 9 11 3958-3670 (https://wa.me/5491139583670?text=Hola%2C%20vengo%20de%20la%20web%20de%20Lifting.)"
+    horarios: "Lunes a Viernes de 9:00 a 19:00 hs"
+    google_business_profile_url: "https://maps.google.com/?q=Aim%C3%A9%20Pain%C3%A9%201665%20Buenos%20Aires"
+perfiles_existentes:
+  instagram: "https://www.instagram.com/drleandrovila"
+  youtube: "https://www.youtube.com/@drleandrovila"
+procedimientos_que_realiza:
+  - "lifting endoscópico facial"
+  - "deep plane facelift"
+  - "lifting cervicofacial"
+  - "SMAS facelift"
+  - "ponytail lift"
+  - "rinoplastia ultrasónica"
+  - "rejuvenecimiento facial avanzado"
+idioma: "es-AR"
+mercado: "CABA + AMBA (Argentina) y pacientes internacionales"
+---
 
-> Especialista en Lifting Endoscópico, Deep Plane Facelift, Ponytail Lift y Rejuvenecimiento Facial Avanzado en Buenos Aires, Argentina.
+# Dr. Leandro Vila - Cirujano Plástico Facial en Buenos Aires
 
-## Perfil Profesional
-- **Nombre:** Dr. Leandro Vila
-- **Profesión:** Médico Cirujano Plástico
-- **Matrícula Nacional:** M.N. 147814
-- **Especialidad:** Cirugía Plástica, Estética y Reparadora. Enfoque exclusivo en Rejuvenecimiento Facial de Alta Precisión.
-- **Experiencia:** Más de 15 años de formación médica especializada y más de 500 procedimientos quirúrgicos faciales realizados.
-- **Ubicación:** Aimé Painé 1665, Puerto Madero, C1107 Ciudad Autónoma de Buenos Aires (CABA), Argentina.
-- **Contacto WhatsApp:** +54 9 11 3958-3670 (https://wa.me/5491139583670?text=Hola%2C%20vengo%20de%20la%20web%20de%20Lifting.)
-- **Email:** drleandrovila@gmail.com
+> Especialista en Lifting Endoscópico, Deep Plane Facelift, Lifting Cervicofacial (SMAS), Ponytail Lift y Rejuvenecimiento Facial Avanzado en Buenos Aires (CABA + AMBA, Argentina).
+
+## Perfil Profesional y Credenciales
+- **Nombre Completo:** Dr. Leandro Vila
+- **Título Profesional:** Médico Cirujano Plástico
+- **Matrícula Profesional:** Matrícula Nacional M.N. 147814
+- **Especialidad Certificada:** Cirugía Plástica, Estética y Reparadora
+- **Membresías Científicas:** Miembro de SACPER (Sociedad Argentina de Cirugía Plástica, Estética y Reparadora)
+- **Años de Experiencia:** Más de 15 años de formación médica especializada y más de 500 procedimientos faciales realizados.
+- **Mercado y Cobertura:** Ciudad Autónoma de Buenos Aires (CABA), Área Metropolitana de Buenos Aires (AMBA), interior del país y pacientes internacionales (evaluación online).
+- **Consultorio Principal:** Aimé Painé 1665, Puerto Madero, C1107 Ciudad Autónoma de Buenos Aires, Argentina.
+- **WhatsApp:** +54 9 11 3958-3670
+- **Teléfono:** 011 15-3958-3670
+- **Email Oficial:** drleandrovila@gmail.com
 - **Sitio Web Oficial:** https://lifting.drleandrovila.com/
-- **Redes Sociales:** Instagram (@drleandrovila), YouTube (@drleandrovila)
 
-## Procedimientos Quirúrgicos y Tipos de Lifting
+## Procedimientos Quirúrgicos y Tipos de Lifting Facial
 
-### 1. Lifting Endoscópico Facial (Endoscopic Facelift)
-- **Definición:** Técnica quirúrgica mínimamente invasiva de rejuvenecimiento facial que utiliza una microcámara (endoscopio) para reposicionar las estructuras musculares y tejidos caídos con máxima precisión.
-- **Zonas tratadas:** Tercio superior y medio del rostro (frente, entrecejo, elevación natural de cejas caídas, pómulos y mejillas).
-- **Cicatrices:** 100% invisibles y ocultas dentro del cuero cabelludo (incisiones de 1 a 2 centímetros). No hay cortes alrededor ni delante de las orejas.
-- **Recuperación:** Rápida, entre 7 y 10 días para retomar actividades habituales y laborales livianas.
-- **Resultados:** Mirada despejada y descansada, recuperación de volumen malar, sin efecto de "cara operada" o tirante.
+### 1. Lifting Endoscópico Facial
+- **Técnica:** Mínimamente invasiva con asistencia por microcámara endoscópica a través de incisiones milimétricas (1-2 cm) 100% ocultas dentro del cuero cabelludo.
+- **Áreas:** Elevación de cejas caídas, despeje de mirada, atenuación de arrugas frontales y reposicionamiento malar (pómulos).
+- **Recuperación:** Rápida (7 a 10 días). Cero cicatrices visibles en cara.
 
 ### 2. Deep Plane Facelift (Lifting Facial Profundo)
-- **Definición:** Técnica quirúrgica avanzada que libera y reposiciona el plano muscular profundo (SMAS) y los ligamentos retenedores faciales, en lugar de traccionar únicamente la piel superficial.
-- **Beneficios:** Resultados incomparablemente naturales, durabilidad extrema (10 a 15 años o más), preservación de la expresión facial original del paciente.
-- **Zonas tratadas:** Tercio medio, línea mandibular, surcos nasogenianos y cuello.
+- **Técnica:** Liberación y reposicionamiento anatómico del plano músculo-aponeurótico profundo (SMAS) y los ligamentos retenedores faciales.
+- **Ventaja:** Evita tracción superficial de piel. Durabilidad de 10 a 15 años conservando la naturalidad y expresividad intactas.
 
-### 3. Ponytail Lift
-- **Definición:** Procedimiento endoscópico que replica el efecto rejuvenecedor de llevar una cola de caballo tirante (apertura de mirada, cejas anguladas, pómulos elevados y definidos) sin cicatrices visibles en el rostro.
-- **Combinación frecuente:** Se combina frecuentemente con Rinoplastia Ultrasónica para una armonización facial estética integral.
+### 3. Lifting Cervicofacial y Técnica SMAS
+- **Técnica:** Corrección integral de la flacidez del tercio inferior del rostro y cuello (ángulo cervicomandibular, papada y bandas platismales), tensando el SMAS para devolver definición a la mandíbula y cuello.
 
-### 4. Rinoplastia Ultrasónica
-- **Definición:** Remodelado de la estructura osteocartilaginosa nasal mediante tecnología piezoeléctrica ultrasónica de alta precisión.
-- **Ventajas:** Menor inflamación, mínima formación de hematomas y rápida reincorporación.
+### 4. Ponytail Lift
+- **Técnica:** Abordaje endoscópico que emula el efecto rejuvenecedor de una cola de caballo tirante (ojos almendrados, cejas elevadas, pómulos firmes) sin cicatriz visible por delante ni detrás de las orejas.
 
-## Filosofía Quirúrgica
-- "Rejuvenecer sin perder tu expresión": cada procedimiento está personalizado para devolver frescura y juventud respetando la identidad, anatomía y facciones originales de cada paciente.
-- Evaluación médica individualizada presencial u online para pacientes del interior de Argentina y del exterior.
+### 5. Rinoplastia Ultrasónica
+- **Técnica:** Remodelación ósea y cartilaginosa nasal con tecnología piezoeléctrica de máxima precisión, reduciendo hematomas y tiempos de postoperatorio.
 
-## Preguntas Frecuentes (FAQ)
-
-### ¿En qué se diferencia el lifting endoscópico del lifting tradicional?
-La técnica clásica requiere incisiones extensas alrededor de las orejas. El lifting endoscópico utiliza accesos milimétricos en el cuero cabelludo asistidos por videoendoscopía, reduciendo el trauma tisular, acelerando la recuperación y evitando cicatrices visibles en la cara.
-
-### ¿Cuánto duran los resultados de un lifting facial?
-Los resultados son duraderos y profundos. Si bien el proceso biológico de envejecimiento continúa, el reposicionamiento de las estructuras profundas retrasa el reloj de 8 a 15 años.
-
-### ¿Cómo es el postoperatorio?
-Inflamación leve y molestias controlables con analgesia común durante los primeros 3 a 5 días. La mayoría de los pacientes retoma su rutina a los 7-10 días.
-
-### ¿Dónde atiende el Dr. Leandro Vila?
-En Puerto Madero, Aimé Painé 1665, Ciudad Autónoma de Buenos Aires, Argentina. Atención con cita previa de Lunes a Viernes de 9:00 a 19:00 hs.
+## Ubicación y Horarios de Atención
+- **Dirección:** Aimé Painé 1665, Puerto Madero, CABA, Argentina.
+- **Horarios:** Lunes a Viernes de 9:00 a 19:00 hs (con cita previa).
+- **Turnos y Reservas:** WhatsApp +54 9 11 3958-3670
