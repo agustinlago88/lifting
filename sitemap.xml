@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://lifting.drleandrovila.com/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://lifting.drleandrovila.com/home-1.jpg</image:loc>
+      <image:title>Dr. Leandro Vila - Cirujano Plástico en Buenos Aires</image:title>
+      <image:caption>Dr. Leandro Vila, cirujano plástico especialista en lifting facial endoscópico, deep plane y rejuvenecimiento facial en Buenos Aires (M.N. 147814)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lifting.drleandrovila.com/pony-rino.jpg</image:loc>
+      <image:title>Resultados Antes y Después - Ponytail Lift y Rinoplastia Ultrasónica</image:title>
+      <image:caption>Casos clínicos reales de rejuvenecimiento facial con lifting endoscópico por el Dr. Leandro Vila en Puerto Madero, CABA</image:caption>
+    </image:image>
+  </url>
+</urlset>

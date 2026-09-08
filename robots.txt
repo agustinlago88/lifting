@@ -1,0 +1,51 @@
+﻿# robots.txt for https://lifting.drleandrovila.com/
+# Optimizado para motores de búsqueda tradicionales y modelos de Inteligencia Artificial (GEO / AI Search)
+
+User-agent: *
+Allow: /
+
+# Rastreadores y motores de Inteligencia Artificial (OpenAI, Perplexity, Anthropic, Google Gemini, Apple)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# Sitemap y especificación LLMs
+Sitemap: https://lifting.drleandrovila.com/sitemap.xml
