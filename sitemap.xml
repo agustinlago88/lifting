@@ -1,20 +1,77 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://lifting.drleandrovila.com/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://lifting.drleandrovila.com/home-1.jpg</image:loc>
       <image:title>Dr. Leandro Vila - Cirujano Plástico en Buenos Aires</image:title>
-      <image:caption>Dr. Leandro Vila, cirujano plástico especialista en lifting facial endoscópico, deep plane y rejuvenecimiento facial en Buenos Aires (M.N. 147814)</image:caption>
+      <image:caption>Dr. Leandro Vila, cirujano plástico especialista en Deep Plane Facelift, lifting endoscópico y rejuvenecimiento facial en Buenos Aires (M.N. 147814)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lifting.drleandrovila.com/deep-plane-lifting.jpg</image:loc>
+      <image:title>Anatomía y planos profundos del Deep Plane Facelift</image:title>
+      <image:caption>Esquema de liberación de ligamentos y reposicionamiento sub-SMAS por el Dr. Leandro Vila</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://lifting.drleandrovila.com/pony-rino.jpg</image:loc>
       <image:title>Resultados Antes y Después - Ponytail Lift y Rinoplastia Ultrasónica</image:title>
-      <image:caption>Casos clínicos reales de rejuvenecimiento facial con lifting endoscópico por el Dr. Leandro Vila en Puerto Madero, CABA</image:caption>
+      <image:caption>Casos clínicos reales de rejuvenecimiento facial por el Dr. Leandro Vila en Puerto Madero, CABA</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://lifting.drleandrovila.com/deep-plane-facelift-buenos-aires/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://lifting.drleandrovila.com/deep-plane-lifting.jpg</image:loc>
+      <image:title>Deep Plane Facelift en Buenos Aires - Dr. Leandro Vila</image:title>
+      <image:caption>Guía clínica integral de la técnica quirúrgica de Deep Plane Facelift</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lifting.drleandrovila.com/dr-leandro-vila/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://lifting.drleandrovila.com/home-1.jpg</image:loc>
+      <image:title>Dr. Leandro Vila - Cirujano Plástico Certificado SACPER</image:title>
+      <image:caption>Perfil médico y trayectoria del Dr. Leandro Vila (M.N. 147814)</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://lifting.drleandrovila.com/lifting-facial/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lifting.drleandrovila.com/lifting-endoscopico/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lifting.drleandrovila.com/casos-clinicos/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lifting.drleandrovila.com/preguntas-frecuentes/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lifting.drleandrovila.com/contacto/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

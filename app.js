@@ -1,16 +1,18 @@
 let revealObserver;
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Intersection Observer para animaciones Reveal suaves
     revealObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("is-visible");
             }
         });
-    }, { threshold: 0.18 });
+    }, { threshold: 0.15 });
 
     document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 
+    // Testimonial Slider
     const slides = Array.from(document.querySelectorAll("[data-testimonial-slide]"));
     const dotsContainer = document.querySelector("[data-testimonial-dots]");
     const prevButton = document.querySelector("[data-testimonial-prev]");
@@ -63,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             toggle.addEventListener("click", () => {
                 const isOpen = !content.classList.contains("max-h-0");
 
-                // Close all other open FAQ items first for accordion effect
+                // Cierra otros acordeones para mantener orden visual
                 faqItems.forEach((otherItem) => {
                     if (otherItem !== item) {
                         const otherContent = otherItem.querySelector("[data-faq-content]");
@@ -78,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 });
 
-                // Toggle current item
+                // Toggle elemento actual
                 if (isOpen) {
                     content.style.maxHeight = null;
                     content.classList.add("max-h-0");
@@ -86,7 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         icon.classList.remove("rotate-180");
                     }
                 } else {
-                    // Set max-height to scrollHeight for a smooth transition
                     content.style.maxHeight = content.scrollHeight + "px";
                     content.classList.remove("max-h-0");
                     if (icon) {
@@ -97,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Mobile Menu Toggle
+    // Menú Móvil
     const mobileMenuBtn = document.getElementById("mobile-menu-btn");
     const mobileMenu = document.getElementById("mobile-menu");
     const mobileMenuIcon = document.getElementById("mobile-menu-icon");
@@ -116,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        // Close menu when clicking on any nav link
+        // Cerrar menú al hacer clic en enlaces
         mobileMenu.querySelectorAll("a").forEach((link) => {
             link.addEventListener("click", () => {
                 mobileMenu.classList.add("hidden");
@@ -125,4 +126,21 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
+
+    // Seguimiento Seguro de Eventos de Conversión (Meta Pixel)
+    document.querySelectorAll("a[href*='wa.me'], a[href*='whatsapp.com']").forEach((el) => {
+        el.addEventListener("click", () => {
+            if (typeof fbq === "function") {
+                fbq("track", "Contact");
+            }
+        });
+    });
+
+    document.querySelectorAll("a[href^='tel:']").forEach((el) => {
+        el.addEventListener("click", () => {
+            if (typeof fbq === "function") {
+                fbq("track", "Contact");
+            }
+        });
+    });
 });
