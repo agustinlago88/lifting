@@ -5,24 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta name="theme-color" content="#1c1b1b">
 
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1363463228952376');
-    fbq('init', '3451415908359744');
-    fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt="">
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3451415908359744&ev=PageView&noscript=1" alt="">
-    </noscript>
+    <!-- Meta Pixel - Dr. Leandro Vila (dataset unico) -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1363463228952376');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt=""></noscript>
+<!-- End Meta Pixel -->
 
     <title>Preguntas Frecuentes sobre Lifting y Cirugía Facial | Dr. Leandro Vila</title>
     <meta name="description" content="Respuestas médicas claras y prudentes sobre Deep Plane Facelift, lifting endoscópico, recuperación y cuidados en Buenos Aires con el Dr. Leandro Vila.">
@@ -110,9 +108,7 @@
                 <a class="font-montserrat uppercase text-[0.72rem] tracking-wider text-[#c8c6c6] hover:text-[#2EC4B6]" href="../#casos">Casos</a>
                 <a class="font-montserrat uppercase text-[0.72rem] tracking-wider text-[#c8c6c6] hover:text-[#2EC4B6]" href="../#contacto">Contacto</a>
             </div>
-            <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n." 
-               onclick="fbq('track', 'Contact')" 
-               class="bg-[#2EC4B6] text-[#003531] px-4 py-2 rounded-sm text-xs uppercase tracking-wider font-bold hover:scale-105 transition-transform">
+            <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n." data-ref="faq-nav" class="bg-[#2EC4B6] text-[#003531] px-4 py-2 rounded-sm text-xs uppercase tracking-wider font-bold hover:scale-105 transition-transform">
                 Consultar
             </a>
         </div>
@@ -163,9 +159,7 @@
             <p class="text-xs sm:text-sm text-on-surface-variant max-w-md mx-auto mb-6">
                 Consultorio en Puerto Madero, CABA. Atención médica presencial u online con cita previa.
             </p>
-            <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20solicitar%20una%20evaluaci%C3%B3n." 
-               onclick="fbq('track', 'Contact')" 
-               class="inline-block bg-accent-teal text-on-primary px-8 py-3.5 rounded-sm text-xs uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all">
+            <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20solicitar%20una%20evaluaci%C3%B3n." data-ref="faq-cta" class="inline-block bg-accent-teal text-on-primary px-8 py-3.5 rounded-sm text-xs uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all">
                 Escribir por WhatsApp
             </a>
         </section>
@@ -181,5 +175,6 @@
             </a>
         </div>
     </footer>
+    <script src="/meta-tracking.js" defer></script>
 </body>
 </html>

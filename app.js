@@ -127,20 +127,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Seguimiento Seguro de Eventos de Conversión (Meta Pixel)
-    document.querySelectorAll("a[href*='wa.me'], a[href*='whatsapp.com']").forEach((el) => {
-        el.addEventListener("click", () => {
-            if (typeof fbq === "function") {
-                fbq("track", "Contact");
-            }
-        });
-    });
 
-    document.querySelectorAll("a[href^='tel:']").forEach((el) => {
-        el.addEventListener("click", () => {
-            if (typeof fbq === "function") {
-                fbq("track", "Contact");
-            }
-        });
-    });
 });
