@@ -110,6 +110,64 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
           ]
         },
         {
+          "@type": "MedicalBusiness",
+          "@id": "https://lifting.drleandrovila.com/#clinic",
+          "name": "Dr. Leandro Vila - Deep Plane Facelift y Cirugía Plástica Facial",
+          "url": "https://lifting.drleandrovila.com/",
+          "image": "https://lifting.drleandrovila.com/home-1.jpg",
+          "telephone": "+5491139583670",
+          "email": "drleandrovila@gmail.com",
+          "priceRange": "$$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Aimé Painé 1665",
+            "addressLocality": "Puerto Madero, Ciudad Autónoma de Buenos Aires",
+            "addressRegion": "CABA",
+            "postalCode": "C1107",
+            "addressCountry": "AR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -34.6186,
+            "longitude": -58.3639
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "19:00"
+            }
+          ],
+          "areaServed": [
+            { "@type": "City", "name": "Buenos Aires" },
+            { "@type": "AdministrativeArea", "name": "Puerto Madero" },
+            { "@type": "AdministrativeArea", "name": "Recoleta" },
+            { "@type": "AdministrativeArea", "name": "Palermo" },
+            { "@type": "AdministrativeArea", "name": "Belgrano" },
+            { "@type": "Country", "name": "Argentina" }
+          ],
+          "founder": {
+            "@id": "https://lifting.drleandrovila.com/#physician"
+          }
+        },
+        {
+          "@type": "VideoObject",
+          "@id": "https://lifting.drleandrovila.com/#video-endoscopico",
+          "name": "Lifting Facial Endoscópico y Deep Plane en Buenos Aires | Dr. Leandro Vila",
+          "description": "Explicación clínica del Dr. Leandro Vila (M.N. 147814, Miembro Titular SACPER) sobre el abordaje de Lifting Endoscópico y Deep Plane Facelift para rejuvenecimiento facial natural sin cicatrices visibles.",
+          "thumbnailUrl": [
+            "https://i.ytimg.com/vi/mX_6p5DBUPY/maxresdefault.jpg",
+            "https://i.ytimg.com/vi/mX_6p5DBUPY/hqdefault.jpg"
+          ],
+          "uploadDate": "2025-01-15T12:00:00-03:00",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/mX_6p5DBUPY",
+          "contentUrl": "https://www.youtube.com/watch?v=mX_6p5DBUPY",
+          "publisher": {
+            "@id": "https://lifting.drleandrovila.com/#physician"
+          }
+        },
+        {
           "@type": "WebSite",
           "@id": "https://lifting.drleandrovila.com/#website",
           "url": "https://lifting.drleandrovila.com/",
@@ -219,6 +277,14 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Al reposicionar la estructura fibromuscular profunda, los resultados ofrecen una durabilidad biológica superior (habitualmente de 10 a 15 años), acompañando el paso del tiempo de manera natural."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Realizan evaluaciones online para pacientes del interior o del exterior?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Para pacientes que residen fuera de Buenos Aires o en el extranjero, el Dr. Leandro Vila realiza una consulta de valoración inicial por videollamada para planificar el procedimiento, recomendándose una estadía aproximada de 10 a 14 días en Buenos Aires para el seguimiento postoperatorio y retiro de puntos."
               }
             }
           ]
@@ -688,6 +754,19 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
                             </div>
                         </div>
                     </div>
+
+                    <!-- FAQ 9 -->
+                    <div class="faq-item border border-outline/20 rounded-sm bg-surface-container-low transition-all duration-300 overflow-hidden" data-faq-item>
+                        <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-xs sm:text-sm hover:text-accent-teal transition-colors focus:outline-none" data-faq-toggle>
+                            <span>¿Realizan evaluaciones online para pacientes del interior o del exterior?</span>
+                            <span class="material-symbols-outlined transform transition-transform duration-300 text-accent-teal text-lg flex-shrink-0" data-faq-icon>expand_more</span>
+                        </button>
+                        <div class="faq-answer max-h-0 transition-all duration-500 ease-in-out overflow-hidden" data-faq-content>
+                            <div class="px-5 pb-4 text-on-surface-variant font-light leading-relaxed text-xs sm:text-sm border-t border-outline/10 pt-3">
+                                Sí. Para pacientes del interior de Argentina o del extranjero, realizamos una <strong class="text-white font-medium">consulta de valoración inicial por videollamada</strong> con el Dr. Leandro Vila para evaluar la anatomía facial y planificar la cirugía. Se recomienda prever una estadía de <strong class="text-white font-medium">10 a 14 días en Buenos Aires</strong> para los controles postoperatorios y el retiro de suturas antes de regresar.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -744,17 +823,34 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
         </section>
     </main>
 
-    <!-- FOOTER COMPACTO -->
+    <!-- FOOTER COMPACTO CON ENLACES INTERNOS SEO -->
     <footer class="bg-[#111] w-full py-8 px-4 sm:px-6 md:px-8 border-t border-[#3c4947]/15">
-        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-xs text-[#c8c6c6]">
-            <div>
-                <p class="font-montserrat font-bold text-white text-sm">Dr. Leandro Vila · M.N. 147814</p>
-                <p class="text-[0.68rem] text-on-surface-variant/70 mt-0.5">Cirujano Plástico Especialista · Miembro Titular SACPER · Aimé Painé 1665, Puerto Madero, CABA.</p>
+        <div class="max-w-5xl mx-auto space-y-4">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-xs text-[#c8c6c6]">
+                <div>
+                    <p class="font-montserrat font-bold text-white text-sm">Dr. Leandro Vila · M.N. 147814</p>
+                    <p class="text-[0.68rem] text-on-surface-variant/70 mt-0.5">Cirujano Plástico Especialista · Miembro Titular SACPER · Aimé Painé 1665, Puerto Madero, CABA.</p>
+                </div>
+                <div class="flex items-center gap-5 text-xs">
+                    <a href="https://www.instagram.com/drleandrovila" target="_blank" rel="noopener noreferrer" class="hover:text-accent-teal transition-colors">Instagram</a>
+                    <a href="https://www.youtube.com/@drleandrovila" target="_blank" rel="noopener noreferrer" class="hover:text-accent-teal transition-colors">YouTube</a>
+                    <a href="tel:+5491139583670" class="hover:text-accent-teal transition-colors">011 15-3958-3670</a>
+                </div>
             </div>
-            <div class="flex items-center gap-5 text-xs">
-                <a href="https://www.instagram.com/drleandrovila" target="_blank" rel="noopener noreferrer" class="hover:text-accent-teal transition-colors">Instagram</a>
-                <a href="https://www.youtube.com/@drleandrovila" target="_blank" rel="noopener noreferrer" class="hover:text-accent-teal transition-colors">YouTube</a>
-                <a href="tel:+5491139583670" class="hover:text-accent-teal transition-colors">011 15-3958-3670</a>
+            <div class="pt-3 border-t border-outline/10 flex flex-wrap justify-center sm:justify-start gap-x-4 gap-y-1.5 text-[0.65rem] text-on-surface-variant/60">
+                <a href="./deep-plane-facelift-buenos-aires/" class="hover:text-accent-teal transition-colors">Deep Plane Facelift Buenos Aires</a>
+                <span>·</span>
+                <a href="./lifting-endoscopico/" class="hover:text-accent-teal transition-colors">Lifting Endoscópico</a>
+                <span>·</span>
+                <a href="./lifting-facial/" class="hover:text-accent-teal transition-colors">Lifting Facial y Cervical</a>
+                <span>·</span>
+                <a href="./casos-clinicos/" class="hover:text-accent-teal transition-colors">Casos Clínicos</a>
+                <span>·</span>
+                <a href="./dr-leandro-vila/" class="hover:text-accent-teal transition-colors">Dr. Leandro Vila</a>
+                <span>·</span>
+                <a href="./preguntas-frecuentes/" class="hover:text-accent-teal transition-colors">Preguntas Frecuentes</a>
+                <span>·</span>
+                <a href="./contacto/" class="hover:text-accent-teal transition-colors">Consultorio Puerto Madero</a>
             </div>
         </div>
     </footer>
