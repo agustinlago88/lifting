@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dark" lang="es">
+<html class="dark scroll-smooth" lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
@@ -44,69 +44,57 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
     <!-- Open Graph / Redes Sociales y Motores de Búsqueda -->
     <meta property="og:locale" content="es_AR">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Dr. Leandro Vila - Cirugía Facial">
+    <meta property="og:site_name" content="Dr. Leandro Vila - Cirugía Plástica Facial">
     <meta property="og:title" content="Deep Plane Facelift y Lifting Facial en Buenos Aires | Dr. Leandro Vila">
-    <meta property="og:description" content="Cirugía facial avanzada para reposicionar tejidos profundos con resultados armónicos en Buenos Aires. Dr. Leandro Vila, cirujano plástico certificado (SACPER).">
+    <meta property="og:description" content="Deep Plane Facelift en Buenos Aires con el Dr. Leandro Vila. Cirugía facial avanzada para reposicionar tejidos profundos y lograr un rejuvenecimiento natural y armónico.">
     <meta property="og:url" content="https://lifting.drleandrovila.com/">
     <meta property="og:image" content="https://lifting.drleandrovila.com/home-1.jpg">
-    <meta property="og:image:alt" content="Dr. Leandro Vila, Cirujano Plástico Especialista en Deep Plane Facelift en Buenos Aires">
+    <meta property="og:image:secure_url" content="https://lifting.drleandrovila.com/home-1.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Leandro Vila - Especialista en Deep Plane Facelift y Lifting Facial en Buenos Aires">
 
-    <!-- Twitter Cards -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Deep Plane Facelift y Lifting Facial en Buenos Aires | Dr. Leandro Vila">
-    <meta name="twitter:description" content="Cirugía facial avanzada para reposicionar tejidos profundos con resultados naturales en Buenos Aires. Dr. Leandro Vila.">
+    <meta name="twitter:description" content="Deep Plane Facelift en Buenos Aires con el Dr. Leandro Vila. Cirugía facial avanzada para reposicionar tejidos profundos y lograr un rejuvenecimiento natural y armónico.">
     <meta name="twitter:image" content="https://lifting.drleandrovila.com/home-1.jpg">
 
-    <!-- Marcado Estructurado Schema.org (JSON-LD) para Google Search y Motores de IA -->
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="./home-1.jpg">
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Person",
-          "@id": "https://lifting.drleandrovila.com/#leandro-vila",
+          "@type": ["Person", "Physician"],
+          "@id": "https://lifting.drleandrovila.com/#physician",
           "name": "Dr. Leandro Vila",
-          "jobTitle": "Médico Cirujano Plástico",
-          "description": "Cirujano plástico en Buenos Aires especializado en cirugía facial, Deep Plane Facelift, lifting endoscópico y rejuvenecimiento facial.",
-          "url": "https://lifting.drleandrovila.com/dr-leandro-vila/",
+          "jobTitle": "Cirujano Plástico Especialista en Cirugía Facial",
+          "description": "El Dr. Leandro Vila es médico especialista en Cirugía Plástica, Estética y Reparadora (M.N. 147814) y Miembro Titular de SACPER, dedicado al rejuvenecimiento facial avanzado, Deep Plane Facelift y Lifting Endoscópico en Puerto Madero, Buenos Aires.",
+          "url": "https://lifting.drleandrovila.com/",
           "image": "https://lifting.drleandrovila.com/home-1.jpg",
+          "telephone": "+5491139583670",
+          "email": "drleandrovila@gmail.com",
+          "medicalSpecialty": "PlasticSurgery",
           "identifier": {
             "@type": "PropertyValue",
             "name": "Matrícula Nacional",
-            "value": "M.N. 147814"
+            "value": "147814"
           },
-          "memberOf": [
-            {
-              "@type": "MedicalOrganization",
-              "name": "SACPER",
-              "alternateName": "Sociedad Argentina de Cirugía Plástica, Estética y Reparadora",
-              "url": "https://sacper.org.ar"
-            }
-          ],
-          "worksFor": {
-            "@id": "https://lifting.drleandrovila.com/#medical-practice"
+          "memberOf": {
+            "@type": "MedicalOrganization",
+            "name": "Sociedad Argentina de Cirugía Plástica, Estética y Reparadora (SACPER)"
           },
-          "sameAs": [
-            "https://www.instagram.com/drleandrovila",
-            "https://www.youtube.com/@drleandrovila"
-          ]
-        },
-        {
-          "@type": ["Physician", "MedicalBusiness"],
-          "@id": "https://lifting.drleandrovila.com/#medical-practice",
-          "name": "Consultorio Dr. Leandro Vila - Cirugía Facial",
-          "url": "https://lifting.drleandrovila.com/",
-          "image": "https://lifting.drleandrovila.com/home-1.jpg",
-          "description": "Práctica médica especializada en Deep Plane Facelift, lifting facial, lifting endoscópico y rejuvenecimiento facial en Puerto Madero, Buenos Aires.",
-          "medicalSpecialty": "PlasticSurgery",
-          "priceRange": "$$$$",
-          "telephone": "+5491139583670",
-          "email": "drleandrovila@gmail.com",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Aimé Painé 1665",
             "addressLocality": "Puerto Madero, Ciudad Autónoma de Buenos Aires",
-            "addressRegion": "Buenos Aires",
+            "addressRegion": "CABA",
             "postalCode": "C1107",
             "addressCountry": "AR"
           },
@@ -115,41 +103,23 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
             "latitude": -34.6186,
             "longitude": -58.3639
           },
-          "areaServed": [
-            {
-              "@type": "City",
-              "name": "Ciudad Autónoma de Buenos Aires"
-            },
-            {
-              "@type": "AdministrativeArea",
-              "name": "Área Metropolitana de Buenos Aires (AMBA)"
-            },
-            {
-              "@type": "Country",
-              "name": "Argentina"
-            }
-          ],
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-              "opens": "09:00",
-              "closes": "19:00"
-            }
+          "sameAs": [
+            "https://www.instagram.com/drleandrovila",
+            "https://www.youtube.com/@drleandrovila"
           ]
         },
         {
           "@type": "WebSite",
           "@id": "https://lifting.drleandrovila.com/#website",
           "url": "https://lifting.drleandrovila.com/",
-          "name": "Dr. Leandro Vila | Cirugía Facial",
+          "name": "Dr. Leandro Vila | Deep Plane Facelift y Cirugía Facial Buenos Aires",
           "publisher": {
-            "@id": "https://lifting.drleandrovila.com/#leandro-vila"
+            "@id": "https://lifting.drleandrovila.com/#physician"
           },
           "inLanguage": "es-AR"
         },
         {
-          "@type": "WebPage",
+          "@type": "MedicalWebPage",
           "@id": "https://lifting.drleandrovila.com/#webpage",
           "url": "https://lifting.drleandrovila.com/",
           "name": "Deep Plane Facelift y Lifting Facial en Buenos Aires | Dr. Leandro Vila",
@@ -157,26 +127,30 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
             "@id": "https://lifting.drleandrovila.com/#website"
           },
           "about": {
-            "@id": "https://lifting.drleandrovila.com/#leandro-vila"
+            "@id": "https://lifting.drleandrovila.com/#procedure-deep-plane"
           },
-          "description": "Deep Plane Facelift en Buenos Aires con el Dr. Leandro Vila. Cirugía facial avanzada para reposicionar tejidos profundos y lograr un rejuvenecimiento natural y armónico.",
+          "author": {
+            "@id": "https://lifting.drleandrovila.com/#physician"
+          },
           "inLanguage": "es-AR"
         },
         {
           "@type": "MedicalProcedure",
-          "@id": "https://lifting.drleandrovila.com/#procedimiento-deep-plane",
-          "name": "Deep Plane Facelift (Lifting Facial Profundo)",
-          "procedureType": "SurgicalProcedure",
-          "bodyLocation": "Plano muscular profundo facial (SMAS), tercio medio y cuello",
-          "description": "Técnica quirúrgica avanzada que libera y reposiciona los tejidos profundos y ligamentos retenedores faciales, logrando definición del contorno mandibular, mejillas y cuello con resultados naturales acordes a la anatomía de cada paciente."
+          "@id": "https://lifting.drleandrovila.com/#procedure-deep-plane",
+          "name": "Deep Plane Facelift",
+          "alternateName": ["Lifting Facial de Plano Profundo", "Deep Plane Lifting", "Ritidoplastia Sub-SMAS"],
+          "procedureType": "https://schema.org/SurgicalProcedure",
+          "bodyLocation": "Rostro, tercio medio facial, pómulos, surcos nasogenianos, línea mandibular (jowls) y cuello",
+          "description": "Técnica quirúrgica avanzada de rejuvenecimiento facial que actúa por debajo del sistema músculo-aponeurótico superficial (SMAS), liberando los ligamentos de retención faciales para reposicionar tejidos profundos en bloque sin tensión cutánea."
         },
         {
           "@type": "MedicalProcedure",
-          "@id": "https://lifting.drleandrovila.com/#procedimiento-endoscopico",
+          "@id": "https://lifting.drleandrovila.com/#procedure-endoscopic",
           "name": "Lifting Endoscópico Facial",
-          "procedureType": "SurgicalProcedure",
-          "bodyLocation": "Tercio superior y medio facial",
-          "description": "Abordaje mínimamente invasivo asistido por microcámara a través de pequeñas incisiones en el cuero cabelludo para reposicionar cejas y pómulos."
+          "alternateName": ["Ponytail Lift", "Lifting Frontal y de Tercio Superior Endoscópico"],
+          "procedureType": "https://schema.org/SurgicalProcedure",
+          "bodyLocation": "Tercio superior del rostro, frente, cejas y región periorbitaria",
+          "description": "Procedimiento quirúrgico mínimamente invasivo asistido por videoendoscopía mediante microincisiones ocultas en el cuero cabelludo para reposicionar cejas y tercio superior."
         },
         {
           "@type": "FAQPage",
@@ -184,50 +158,66 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "¿Qué es un Deep Plane Facelift?",
+              "name": "¿Qué es el Deep Plane Facelift y por qué logra resultados naturales?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "El Deep Plane Facelift es una técnica avanzada de cirugía facial que trabaja por debajo del plano músculo-aponeurótico (SMAS). Permite liberar los ligamentos retenedores faciales y reposicionar en bloque los tejidos profundos descendidos (mejillas, reborde mandibular y cuello), preservando la naturalidad y sin tensión sobre la piel."
+                "text": "Es la técnica más avanzada de rejuvenecimiento facial. A diferencia del lifting tradicional que estira la piel, el Deep Plane actúa por debajo del plano muscular profundo (SMAS), liberando los ligamentos de retención faciales para reposicionar en bloque las estructuras descendidas sin tensión cutánea."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cuál es la diferencia entre Deep Plane y lifting tradicional?",
+              "name": "¿Cuál es la diferencia entre el Lifting Endoscópico y el Deep Plane Facelift Endoscópico?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "El lifting tradicional solía centrarse en traccionar la piel superficial. El Deep Plane Facelift actúa sobre los planos anatómicos profundos y los ligamentos, reposicionando las estructuras musculares y grasas en su posición original sin tirantez artificial."
+                "text": "Ambos utilizan tecnología e instrumental endoscópico, pero tratan distintas zonas anatómicas: el Lifting Endoscópico se enfoca en el tercio superior (cejas, frente y mirada), mientras que el Deep Plane Facelift Endoscópico reposiciona el tercio medio, surcos nasogenianos, mandíbula (jowls) y cuello."
               }
             },
             {
               "@type": "Question",
-              "name": "¿El Deep Plane deja cicatrices?",
+              "name": "¿Cuál es la diferencia entre el Deep Plane y un lifting SMAS tradicional?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Las incisiones se realizan en zonas estratégicamente ubicadas, generalmente en el contorno natural de la oreja y dentro o al límite del cuero cabelludo. Al no haber tensión en la piel, las cicatrices evolucionan con finura y discreción."
+                "text": "Las técnicas de plicatura de SMAS pliegan el tejido lateralmente sin liberar los ligamentos retenedores profundos. El Deep Plane ingresa al plano sub-SMAS y libera directamente estos ligamentos, logrando una elevación anatómica más completa y estable del tercio medio y mandíbula."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cómo es la recuperación?",
+              "name": "¿Qué zonas del rostro y cuello mejora el Deep Plane Facelift?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "La recuperación cursa con edema que va cediendo gradualmente. La mayoría de los pacientes retoma tareas laborales de oficina y actividades cotidianas livianas entre los 10 y 14 días posteriores."
+                "text": "Actúa sobre cuatro zonas clave: pómulos y tercio medio, surcos nasogenianos, reborde mandibular (jowls) y cuello mediante platismoplastia profunda."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cuánto duran los resultados?",
+              "name": "¿Quién es candidato ideal para este procedimiento?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "La duración de los resultados varía según factores individuales y el proceso natural de envejecimiento. Al fijarse los planos musculares profundos, se logra un retraso significativo respecto al punto de partida."
+                "text": "Pacientes con descenso del tercio medio facial, pérdida de definición mandibular o flacidez cervical que buscan un rejuvenecimiento armónico y natural. La indicación se confirma en una evaluación médica presencial."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Soy candidato para un Deep Plane Facelift?",
+              "name": "¿El Deep Plane deja cicatrices visibles?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Suelen ser candidatos mujeres y hombres que presentan descolgamiento de mejillas, surcos nasogenianos marcados o pérdida de definición mandibular y cuello. La indicación precisa se establece en la evaluación médica personalizada."
+                "text": "Las incisiones siguen pliegues anatómicos naturales alrededor de la oreja y la línea capilar. Al recaer la tensión en el plano muscular profundo y no en la piel, las cicatrices maduran de forma fina y prácticamente imperceptible."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo es la recuperación y cuándo puedo retomar mis actividades?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "La inflamación inicial remite progresivamente. La mayoría de los pacientes retoma tareas de oficina y actividades cotidianas livianas entre los 10 y 14 días posteriores a la cirugía."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuánto tiempo duran los resultados?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Al reposicionar la estructura fibromuscular profunda, los resultados ofrecen una durabilidad biológica superior (habitualmente de 10 a 15 años), acompañando el paso del tiempo de manera natural."
               }
             }
           ]
@@ -244,7 +234,9 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
             darkMode: "class",
             theme: {
                 extend: {
-                    screens: { 'xs': '480px' },
+                    screens: {
+                        'xs': '480px',
+                    },
                     colors: {
                         surface: "#1c1b1b",
                         "surface-container-low": "#131313",
@@ -267,553 +259,446 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="bg-surface text-on-surface selection:bg-accent-teal selection:text-on-primary">
-    <!-- Navegación Principal Ordenada y Limpia -->
-    <nav class="fixed top-0 w-full z-50 bg-[#1c1b1b]/90 backdrop-blur-md shadow-[0_0_40px_rgba(46,196,182,0.05)] border-b border-outline/10 transition-all duration-300" aria-label="Navegación principal">
-        <div class="flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-3.5 sm:py-4 gap-2 sm:gap-4">
-            <a href="#inicio" class="font-montserrat font-bold text-white text-base sm:text-xl tracking-tight hover:text-accent-teal transition-colors">
+    <!-- Navegación Simple y Directa (Anclas en la misma página) -->
+    <nav class="fixed top-0 w-full z-50 bg-[#1c1b1b]/95 backdrop-blur-md border-b border-outline/15 transition-all duration-300" aria-label="Navegación principal">
+        <div class="flex justify-between items-center max-w-6xl mx-auto px-4 sm:px-6 py-3.5 gap-3">
+            <a href="#inicio" class="font-montserrat font-bold text-white text-base sm:text-lg tracking-tight hover:text-accent-teal transition-colors">
                 Dr. Leandro Vila
             </a>
-            <div class="hidden md:flex items-center gap-6 lg:gap-8">
-                <a class="font-montserrat uppercase text-[0.72rem] tracking-wider text-[#2EC4B6] border-b-2 border-[#2EC4B6] pb-1" href="#inicio">Inicio</a>
-                <a class="font-montserrat uppercase text-[0.72rem] tracking-wider text-[#c8c6c6] hover:text-[#2EC4B6] transition-all" href="./deep-plane-facelift-buenos-aires/">Deep Plane</a>
-                <a class="font-montserrat uppercase text-[0.72rem] tracking-wider text-[#c8c6c6] hover:text-[#2EC4B6] transition-all" href="#tecnicas">Técnicas</a>
-                <a class="font-montserrat uppercase text-[0.72rem] tracking-wider text-[#c8c6c6] hover:text-[#2EC4B6] transition-all" href="#dr-vila">Dr. Vila</a>
-                <a class="font-montserrat uppercase text-[0.72rem] tracking-wider text-[#c8c6c6] hover:text-[#2EC4B6] transition-all" href="#casos">Casos</a>
-                <a class="font-montserrat uppercase text-[0.72rem] tracking-wider text-[#c8c6c6] hover:text-[#2EC4B6] transition-all" href="#preguntas">FAQ</a>
-                <a class="font-montserrat uppercase text-[0.72rem] tracking-wider text-[#c8c6c6] hover:text-[#2EC4B6] transition-all" href="#contacto">Contacto</a>
+            <div class="hidden md:flex items-center gap-6">
+                <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal transition-colors" href="#deep-plane">Deep Plane</a>
+                <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal transition-colors" href="#video">Video</a>
+                <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal transition-colors" href="#instagram">Instagram</a>
+                <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal transition-colors" href="#dr-vila">Dr. Vila</a>
+                <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal transition-colors" href="#preguntas">FAQ</a>
+                <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal transition-colors" href="#contacto">Contacto</a>
             </div>
-            <div class="flex items-center gap-2 sm:gap-3">
-                <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n%20para%20Deep%20Plane%20Facelift." data-ref="nav" class="bg-[#2EC4B6] text-[#003531] px-3.5 sm:px-5 py-2 rounded-sm text-[0.65rem] sm:text-[0.72rem] uppercase tracking-wider font-bold hover:scale-105 transition-transform duration-300 active:scale-95 whitespace-nowrap">
-                    Solicitar evaluación
+            <div class="flex items-center gap-2">
+                <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n%20para%20Deep%20Plane%20Facelift." data-ref="nav" class="bg-accent-teal text-on-primary px-4 py-2 rounded-sm text-[0.65rem] sm:text-xs uppercase tracking-wider font-bold hover:brightness-110 transition-all whitespace-nowrap">
+                    Consultar
                 </a>
                 <button id="mobile-menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" class="md:hidden p-1.5 text-white hover:text-accent-teal focus:outline-none rounded transition-colors flex items-center justify-center">
                     <span class="material-symbols-outlined text-2xl" id="mobile-menu-icon">menu</span>
                 </button>
             </div>
         </div>
-        <!-- Menú Móvil Desplegable -->
-        <div id="mobile-menu" class="hidden md:hidden bg-[#161515]/98 border-t border-outline/20 backdrop-blur-xl px-6 py-5 shadow-2xl transition-all duration-300">
-            <div class="flex flex-col gap-3">
-                <a class="font-montserrat text-xs uppercase tracking-widest text-accent-teal font-semibold py-2 border-b border-outline/10" href="#inicio">Inicio</a>
-                <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal font-medium py-2 border-b border-outline/10" href="./deep-plane-facelift-buenos-aires/">Deep Plane Facelift (Guía)</a>
-                <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal font-medium py-2 border-b border-outline/10" href="#tecnicas">Técnicas Quirúrgicas</a>
-                <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal font-medium py-2 border-b border-outline/10" href="#video">Video Explicativo</a>
-                <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal font-medium py-2 border-b border-outline/10" href="#dr-vila">Sobre el Dr. Vila</a>
-                <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal font-medium py-2 border-b border-outline/10" href="#casos">Casos Clínicos</a>
-                <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal font-medium py-2 border-b border-outline/10" href="#preguntas">Preguntas Frecuentes</a>
-                <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal font-medium py-2" href="#contacto">Contacto y Ubicación</a>
+        <!-- Menú Móvil Compacto -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#161515]/98 border-t border-outline/20 px-6 py-4 shadow-2xl">
+            <div class="flex flex-col gap-2.5">
+                <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal py-1.5 border-b border-outline/10" href="#deep-plane">Deep Plane y Técnicas</a>
+                <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal py-1.5 border-b border-outline/10" href="#video">Video Explicativo</a>
+                <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal py-1.5 border-b border-outline/10" href="#instagram">Publicaciones Instagram</a>
+                <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal py-1.5 border-b border-outline/10" href="#dr-vila">Biografía Dr. Vila</a>
+                <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal py-1.5 border-b border-outline/10" href="#preguntas">Preguntas Frecuentes (FAQ)</a>
+                <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal py-1.5" href="#contacto">Contacto</a>
             </div>
         </div>
     </nav>
 
     <main>
-        <!-- HERO SECTION -->
-        <section id="inicio" class="relative min-h-[92dvh] flex items-center pt-24 sm:pt-28 pb-12 sm:pb-16 overflow-hidden">
-            <!-- Video de Fondo en Loop -->
+        <!-- 1. HERO SECTION -->
+        <section id="inicio" class="relative min-h-[85dvh] flex items-center pt-24 pb-12 overflow-hidden">
             <video id="video-fondo" class="absolute inset-0 w-full h-full object-cover z-0 opacity-55 pointer-events-none" autoplay muted loop playsinline preload="auto">
                 <source src="./intro_compressed.mp4" type="video/mp4">
             </video>
-            
-            <!-- Capa de Contraste -->
             <div class="absolute inset-0 bg-black/65 z-0 pointer-events-none"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-[#1c1b1b] via-transparent to-[#1c1b1b]/60 z-0 pointer-events-none"></div>
             
-            <!-- Contenido Hero -->
             <div class="max-w-4xl mx-auto w-full px-4 sm:px-6 text-center relative z-10 flex flex-col items-center justify-center">
-                <!-- H1 Principal -->
                 <h1 class="font-montserrat text-2xl xs:text-3xl sm:text-5xl md:text-6xl text-white font-extrabold tracking-tight mb-3 leading-tight uppercase">
                     Deep Plane Facelift y Lifting Facial en Buenos Aires
                 </h1>
-                <!-- Subtítulo Debajo del H1 -->
-                <p class="font-montserrat text-xs sm:text-sm md:text-base text-accent-teal uppercase tracking-[0.16em] sm:tracking-[0.2em] font-semibold mb-6">
-                    Dr. Leandro Vila — Cirujano Plástico especializado en cirugía facial y rejuvenecimiento facial.
+                <p class="font-montserrat text-xs sm:text-sm text-accent-teal uppercase tracking-[0.18em] font-semibold mb-5">
+                    Dr. Leandro Vila — Cirujano Plástico Facial (M.N. 147814 · Miembro Titular SACPER)
                 </p>
-
-                <!-- Subheadline sin redundancia y con palabras clave en negrita -->
-                <div class="max-w-2xl mx-auto mb-8 sm:mb-10">
-                    <p class="text-on-surface-variant text-sm sm:text-base md:text-lg leading-relaxed font-light px-2">
-                        Procedimiento de <strong class="text-white font-semibold">rejuvenecimiento facial avanzado</strong> enfocado en el <strong class="text-white font-semibold">reposicionamiento de tejidos profundos</strong> para devolver definición al contorno mandibular, mejillas y cuello con <strong class="text-white font-semibold">resultados naturales y duraderos</strong> sin tensión en la piel.
-                    </p>
-                </div>
-
-                <!-- CTAs Principales -->
+                <p class="text-on-surface-variant text-sm sm:text-base md:text-lg leading-relaxed font-light max-w-2xl mx-auto mb-8">
+                    Reposicionamiento anatómico de <strong class="text-white font-semibold">tejidos profundos (sub-SMAS)</strong> para redefinir pómulos, contorno mandibular y cuello con <strong class="text-white font-semibold">resultados naturales y duraderos</strong> sin tensión en la piel.
+                </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full sm:w-auto">
-                    <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20solicitar%20una%20evaluaci%C3%B3n%20para%20Deep%20Plane%20Facelift." data-ref="hero" class="w-full sm:w-auto text-center bg-accent-teal text-on-primary px-8 py-3.5 rounded-sm text-[0.7rem] sm:text-xs uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all active:scale-95 duration-200">
+                    <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20solicitar%20una%20evaluaci%C3%B3n%20para%20Deep%20Plane%20Facelift." data-ref="hero" class="w-full sm:w-auto text-center bg-accent-teal text-on-primary px-8 py-3.5 rounded-sm text-xs uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all">
                         Solicitar evaluación
                     </a>
-                    <a href="#casos" 
-                       class="w-full sm:w-auto text-center border border-white/30 text-white hover:border-accent-teal hover:text-accent-teal px-8 py-3.5 rounded-sm text-[0.7rem] sm:text-xs uppercase tracking-widest font-semibold transition-all duration-200">
-                        Ver casos reales
+                    <a href="#deep-plane" class="w-full sm:w-auto text-center border border-white/30 text-white hover:border-accent-teal hover:text-accent-teal px-8 py-3.5 rounded-sm text-xs uppercase tracking-widest font-semibold transition-all">
+                        Ver técnica y FAQ
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- PRIMERA SECCIÓN DE AUTORIDAD Y TÉCNICAS -->
-        <section class="py-14 sm:py-18 bg-surface-container-low border-b border-outline/10">
+        <!-- 2. DEEP PLANE Y COMPARATIVA ENDOSCÓPICA (DIRECTO Y SIN REDUNDANCIAS) -->
+        <section id="deep-plane" class="py-14 sm:py-18 bg-surface border-t border-outline/10">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
-                <div class="text-center mb-6 sm:mb-8">
-                    <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-2 block font-semibold">Filosofía Quirúrgica</span>
-                    <h2 class="font-montserrat text-2xl sm:text-3xl md:text-4xl text-white font-bold leading-tight">
-                        Cirugía facial enfocada en resultados naturales
-                    </h2>
-                </div>
-                <div class="text-on-surface-variant leading-relaxed text-sm sm:text-base font-light space-y-3 max-w-3xl mx-auto text-center md:text-left">
-                    <p>
-                        El paso del tiempo modifica progresivamente la sustentación anatómica del rostro, afectando el <strong class="text-white font-semibold">contorno mandibular</strong>, la firmeza de las <strong class="text-white font-semibold">mejillas</strong> y la definición del <strong class="text-white font-semibold">cuello</strong>.
-                    </p>
-                    <p>
-                        La práctica quirúrgica del <strong class="text-white font-semibold">Dr. Leandro Vila</strong> en Buenos Aires se fundamenta en la <strong class="text-white font-semibold">cirugía facial de precisión</strong>: reposicionar las estructuras profundas respetando la armonía individual, logrando un <strong class="text-white font-semibold">rejuvenecimiento facial natural</strong> sin estigmas de tirantez ni tensión en la piel.
-                    </p>
-                </div>
-
-                <!-- Procedimientos Quirúrgicos Principales -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3.5 mt-8 max-w-4xl mx-auto">
-                    <a href="./deep-plane-facelift-buenos-aires/" class="p-3.5 rounded-sm bg-surface border border-outline/20 text-center hover:border-accent-teal transition-all block">
-                        <span class="block text-accent-teal text-xs font-bold mb-1">✓</span>
-                        <p class="text-xs font-montserrat font-semibold text-white">Deep Plane Facelift</p>
-                        <span class="text-[0.68rem] text-on-surface-variant/80 block mt-0.5">Tercio medio, mandíbula y cuello</span>
-                    </a>
-                    <a href="./lifting-endoscopico/" class="p-3.5 rounded-sm bg-surface border border-outline/20 text-center hover:border-accent-teal transition-all block">
-                        <span class="block text-accent-teal text-xs font-bold mb-1">✓</span>
-                        <p class="text-xs font-montserrat font-semibold text-white">Lifting Endoscópico</p>
-                        <span class="text-[0.68rem] text-on-surface-variant/80 block mt-0.5">Frente, cejas y mirada</span>
-                    </a>
-                    <a href="./lifting-facial/" class="p-3.5 rounded-sm bg-surface border border-outline/20 text-center hover:border-accent-teal transition-all block">
-                        <span class="block text-accent-teal text-xs font-bold mb-1">✓</span>
-                        <p class="text-xs font-montserrat font-semibold text-white">Lifting Cervicofacial</p>
-                        <span class="text-[0.68rem] text-on-surface-variant/80 block mt-0.5">Definición facial integral</span>
-                    </a>
-                    <a href="./casos-clinicos/" class="p-3.5 rounded-sm bg-surface border border-outline/20 text-center hover:border-accent-teal transition-all block">
-                        <span class="block text-accent-teal text-xs font-bold mb-1">✓</span>
-                        <p class="text-xs font-montserrat font-semibold text-white">Casos Clínicos</p>
-                        <span class="text-[0.68rem] text-on-surface-variant/80 block mt-0.5">Evidencia fotográfica real</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN: ¿QUÉ ES EL DEEP PLANE Y QUÉ ZONAS TRATA? -->
-        <section id="deep-plane" class="py-14 sm:py-20 bg-surface">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center mb-12">
-                    <div class="lg:col-span-7 flex flex-col justify-center">
-                        <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-2 font-semibold">Técnica Profunda</span>
-                        <h2 class="font-montserrat text-2xl sm:text-3xl md:text-4xl text-white font-bold mb-4 leading-tight">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-12">
+                    <div class="lg:col-span-7 space-y-4">
+                        <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal block font-semibold">Técnica Profunda</span>
+                        <h2 class="font-montserrat text-2xl sm:text-3xl md:text-4xl text-white font-bold leading-tight">
                             ¿Qué es el Deep Plane Facelift?
                         </h2>
-                        
-                        <div class="space-y-3 text-on-surface-variant leading-relaxed text-sm sm:text-base font-light">
-                            <p>
-                                El <strong class="text-white font-semibold">Deep Plane Facelift</strong> es la técnica quirúrgica más avanzada en <strong class="text-white font-semibold">rejuvenecimiento facial</strong>. A diferencia del lifting tradicional —que tracciona la piel superficialmente—, este abordaje actúa por debajo del <strong class="text-white font-semibold">plano músculo-aponeurótico (SMAS)</strong> para liberar los <strong class="text-white font-semibold">ligamentos de retención faciales</strong>.
-                            </p>
-                            <p>
-                                Al movilizar en bloque el sistema profundo y los compartimentos grasos descendidos, se logra un <strong class="text-white font-semibold">reposicionamiento vertical anatómico</strong> de pómulos, mejillas y óvalo mandibular, restaurando firmeza <strong class="text-white font-semibold">sin tirantez en la piel ni estigmas quirúrgicos</strong>.
-                            </p>
-                            <p class="text-xs text-[#c4c6cf] italic border-l-2 border-accent-teal/40 pl-3">
-                                La indicación quirúrgica precisa se determina mediante una <strong class="text-white font-semibold">evaluación médica diagnóstica</strong>, analizando la estructura ósea, la calidad tisular y el grado de laxitud de cada paciente.
-                            </p>
-                        </div>
-
-                        <div class="mt-6 flex flex-wrap gap-3">
-                            <a href="./deep-plane-facelift-buenos-aires/" 
-                               class="inline-block bg-accent-teal text-on-primary px-6 py-3 rounded-sm text-[0.68rem] sm:text-xs uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all">
-                                Leer guía clínica completa
-                            </a>
-                            <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20consultar%20por%20Deep%20Plane." data-ref="deep-plane" class="inline-block border border-accent-teal text-accent-teal hover:bg-accent-teal hover:text-on-primary px-6 py-3 rounded-sm text-[0.68rem] sm:text-xs uppercase tracking-widest font-bold transition-all">
+                        <p class="text-on-surface-variant leading-relaxed text-sm sm:text-base font-light">
+                            El <strong class="text-white font-semibold">Deep Plane Facelift</strong> aborda el rostro por debajo del <strong class="text-white font-semibold">plano muscular profundo (SMAS)</strong>, liberando los ligamentos de retención faciales para reposicionar en bloque las mejillas, los surcos nasogenianos, la línea mandibular (<strong class="text-white font-semibold">jowls</strong>) y el cuello.
+                        </p>
+                        <p class="text-on-surface-variant leading-relaxed text-sm sm:text-base font-light">
+                            A diferencia del lifting tradicional —que estira la piel superficialmente—, la suspensión recae íntegramente sobre la estructura muscular profunda, logrando un <strong class="text-white font-semibold">rejuvenecimiento facial natural</strong>, sin tirantez ni estigmas quirúrgicos.
+                        </p>
+                        <div class="pt-2">
+                            <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20consultar%20por%20Deep%20Plane." data-ref="deep-plane" class="inline-block bg-accent-teal text-on-primary px-6 py-3 rounded-sm text-xs uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all">
                                 Consultar por Deep Plane
                             </a>
                         </div>
                     </div>
 
                     <div class="lg:col-span-5 flex justify-center">
-                        <div class="relative overflow-hidden rounded-sm border border-outline/30 bg-[#111] shadow-2xl max-w-[380px] w-full">
+                        <div class="relative overflow-hidden rounded-sm border border-outline/30 bg-[#111] shadow-2xl max-w-[340px] w-full">
                             <img src="./deep-plane-lifting.jpg" 
-                                 alt="Anatomía y planos profundos del Deep Plane Facelift - Dr. Leandro Vila Buenos Aires" 
+                                 alt="Resultado Antes y Después Deep Plane Facelift - Dr. Leandro Vila Buenos Aires" 
                                  class="w-full h-auto object-cover" 
                                  loading="lazy" 
                                  decoding="async">
-                            <div class="p-3 bg-black/90 text-center border-t border-outline/10">
-                                <p class="text-accent-teal text-[0.68rem] uppercase tracking-wider font-bold">Planos Sub-SMAS y Ligamentos</p>
+                            <div class="p-2.5 bg-black/90 text-center border-t border-outline/10">
+                                <p class="text-accent-teal text-[0.65rem] uppercase tracking-wider font-bold">Caso Real · Reposición Sub-SMAS</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Zonas que puede mejorar (Tarjetas Compactas) -->
-                <div class="pt-8 border-t border-outline/10">
-                    <div class="text-center max-w-2xl mx-auto mb-8">
-                        <h3 class="font-montserrat text-xl sm:text-2xl text-white font-bold mb-2">
-                            ¿Qué zonas puede mejorar un Deep Plane Facelift?
+                <!-- Tabla Comparativa Concisa (2 Técnicas Endoscópicas) -->
+                <div id="tecnicas" class="pt-8 border-t border-outline/15">
+                    <div class="mb-5">
+                        <h3 class="font-montserrat text-lg sm:text-xl text-white font-bold mb-1">
+                            Comparativa de Técnicas Quirúrgicas Endoscópicas
                         </h3>
                         <p class="text-xs sm:text-sm text-on-surface-variant font-light">
-                            Cada anatomía presenta requerimientos específicos definidos en la evaluación médica.
+                            Ambos procedimientos utilizan <strong class="text-white font-medium">tecnología e instrumental endoscópico</strong> para su abordaje, diferenciándose por las zonas anatómicas que tratan:
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 text-left">
-                        <div class="p-4 rounded-sm bg-surface-container-low border border-outline/15">
-                            <span class="material-symbols-outlined text-accent-teal text-xl mb-1">face</span>
-                            <h4 class="text-white font-montserrat text-xs font-bold mb-1">Pómulos y Mejillas</h4>
-                            <p class="text-[0.72rem] text-on-surface-variant font-light leading-snug">Elevación del <strong class="text-white font-medium">volumen malar</strong> descendido.</p>
-                        </div>
-                        <div class="p-4 rounded-sm bg-surface-container-low border border-outline/15">
-                            <span class="material-symbols-outlined text-accent-teal text-xl mb-1">visibility</span>
-                            <h4 class="text-white font-montserrat text-xs font-bold mb-1">Tercio Medio</h4>
-                            <p class="text-[0.72rem] text-on-surface-variant font-light leading-snug">Transición armónica entre <strong class="text-white font-medium">párpado y mejilla</strong>.</p>
-                        </div>
-                        <div class="p-4 rounded-sm bg-surface-container-low border border-outline/15">
-                            <span class="material-symbols-outlined text-accent-teal text-xl mb-1">linear_scale</span>
-                            <h4 class="text-white font-montserrat text-xs font-bold mb-1">Surcos Nasogenianos</h4>
-                            <p class="text-[0.72rem] text-on-surface-variant font-light leading-snug">Atenuación anatómica profunda <strong class="text-white font-medium">sin rellenos</strong>.</p>
-                        </div>
-                        <div class="p-4 rounded-sm bg-surface-container-low border border-outline/15">
-                            <span class="material-symbols-outlined text-accent-teal text-xl mb-1">crop_square</span>
-                            <h4 class="text-white font-montserrat text-xs font-bold mb-1">Mandíbula y Jowls</h4>
-                            <p class="text-[0.72rem] text-on-surface-variant font-light leading-snug">Eliminación de jowls y <strong class="text-white font-medium">contorno mandibular nítido</strong>.</p>
-                        </div>
-                        <div class="p-4 rounded-sm bg-surface-container-low border border-outline/15">
-                            <span class="material-symbols-outlined text-accent-teal text-xl mb-1">hdr_auto</span>
-                            <h4 class="text-white font-montserrat text-xs font-bold mb-1">Cuello y Platisma</h4>
-                            <p class="text-[0.72rem] text-on-surface-variant font-light leading-snug">Definición cervicofacial y <strong class="text-white font-medium">tensado de platisma</strong>.</p>
-                        </div>
-                        <div class="p-4 rounded-sm bg-surface-container-low border border-outline/15">
-                            <span class="material-symbols-outlined text-accent-teal text-xl mb-1">auto_awesome</span>
-                            <h4 class="text-white font-montserrat text-xs font-bold mb-1">Armonía Global</h4>
-                            <p class="text-[0.72rem] text-on-surface-variant font-light leading-snug">Rejuvenecimiento facial <strong class="text-white font-medium">preservando tu identidad</strong>.</p>
-                        </div>
+                    <div class="overflow-x-auto rounded-sm border border-outline/20 bg-surface-container-low shadow-xl">
+                        <table class="w-full text-left border-collapse text-xs">
+                            <thead>
+                                <tr class="border-b border-outline/20 bg-[#151515]">
+                                    <th class="py-3 px-4 font-montserrat font-bold text-white uppercase">Técnica</th>
+                                    <th class="py-3 px-4 font-montserrat font-bold text-accent-teal uppercase">Plano Anatómico</th>
+                                    <th class="py-3 px-4 font-montserrat font-bold text-white uppercase">Tratamiento de Tejidos</th>
+                                    <th class="py-3 px-4 font-montserrat font-bold text-white uppercase">Indicación Principal / Objetivos</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-outline/10 font-light text-on-surface-variant">
+                                <tr>
+                                    <td class="py-3.5 px-4 font-semibold text-white">
+                                        Lifting Endoscópico<br>
+                                        <span class="text-[0.68rem] text-accent-teal font-normal">(Frontal / Tercio Superior)</span>
+                                    </td>
+                                    <td class="py-3.5 px-4 text-accent-teal font-medium">Plano <strong class="text-accent-teal font-semibold">subperióstico</strong> asistido por microcámara e instrumental endoscópico</td>
+                                    <td class="py-3.5 px-4">Liberación y elevación vertical mediante microincisiones ocultas en el cuero cabelludo, sin resección de piel visible.</td>
+                                    <td class="py-3.5 px-4">Enfocado en <strong class="text-white font-medium">cejas, frente y mirada</strong>. Reposición de cejas descendidas y despeje del marco orbitario.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3.5 px-4 font-semibold text-white">
+                                        Deep Plane Facelift Endoscópico
+                                    </td>
+                                    <td class="py-3.5 px-4 text-accent-teal font-medium">Plano <strong class="text-accent-teal font-semibold">sub-SMAS profundo</strong> con abordaje y magnificación endoscópica</td>
+                                    <td class="py-3.5 px-4">Liberación precisa de ligamentos de retención y reposicionamiento en bloque del SMAS y compartimentos grasos.</td>
+                                    <td class="py-3.5 px-4">Enfocado en <strong class="text-white font-medium">tercio medio, mandíbula, jowls y cuello</strong>. Definición mandibular y cervical sin tracción cutánea.</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN: COMPARATIVA DE TÉCNICAS -->
-        <section id="tecnicas" class="py-14 sm:py-18 bg-surface-container-low border-t border-outline/10">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
-                <div class="text-center max-w-2xl mx-auto mb-8">
-                    <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-2 block font-semibold">Criterio Clínico</span>
+        <!-- 3. VIDEO DE YOUTUBE -->
+        <section id="video" class="py-14 sm:py-18 bg-surface-container-low border-t border-outline/10">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-7">
+                    <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-2 block font-semibold">Explicación en Video</span>
                     <h2 class="font-montserrat text-2xl sm:text-3xl text-white font-bold leading-tight mb-2">
-                        Comparativa de Técnicas Quirúrgicas Endoscópicas
+                        Lifting Facial Endoscópico: Técnica y Abordaje
                     </h2>
                     <p class="text-xs sm:text-sm text-on-surface-variant font-light">
-                        Diferenciación anatómica entre el <strong class="text-white font-medium">Lifting Endoscópico</strong> y el <strong class="text-white font-medium">Deep Plane Facelift Endoscópico</strong> según la zona facial a tratar.
+                        El Dr. Leandro Vila explica en detalle cómo se realiza el procedimiento y por qué logra resultados naturales sin cicatrices visibles.
                     </p>
                 </div>
-
-                <!-- Tabla Comparativa Limpia -->
-                <div class="overflow-x-auto rounded-sm border border-outline/20 bg-surface shadow-xl mb-6">
-                    <table class="w-full text-left border-collapse text-xs">
-                        <thead>
-                            <tr class="border-b border-outline/20 bg-[#151515]">
-                                <th class="py-3 px-4 font-montserrat font-bold text-white uppercase">Técnica</th>
-                                <th class="py-3 px-4 font-montserrat font-bold text-accent-teal uppercase">Plano Anatómico</th>
-                                <th class="py-3 px-4 font-montserrat font-bold text-white uppercase">Tratamiento de Tejidos</th>
-                                <th class="py-3 px-4 font-montserrat font-bold text-white uppercase">Indicación Principal / Objetivos</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-outline/10 font-light text-on-surface-variant">
-                            <tr>
-                                <td class="py-3.5 px-4 font-semibold text-white">
-                                    Lifting Endoscópico<br>
-                                    <span class="text-[0.68rem] text-accent-teal font-normal">(Frontal / Tercio Superior)</span>
-                                </td>
-                                <td class="py-3.5 px-4 text-accent-teal font-medium">Plano <strong class="text-accent-teal font-semibold">subperióstico</strong> asistido por microcámara e instrumental endoscópico</td>
-                                <td class="py-3.5 px-4">Liberación y <strong class="text-white font-medium">elevación vertical</strong> de estructuras mediante microincisiones ocultas en el cuero cabelludo, <strong class="text-white font-medium">sin resección de piel visible</strong>.</td>
-                                <td class="py-3.5 px-4">Enfocado en <strong class="text-white font-medium">cejas, frente y mirada</strong>. Tratamiento de cejas caídas, líneas frontales y apertura del marco orbitario superior.</td>
-                            </tr>
-                            <tr>
-                                <td class="py-3.5 px-4 font-semibold text-white">
-                                    Deep Plane Facelift Endoscópico
-                                </td>
-                                <td class="py-3.5 px-4 text-accent-teal font-medium">Plano <strong class="text-accent-teal font-semibold">sub-SMAS profundo</strong> con abordaje y magnificación endoscópica</td>
-                                <td class="py-3.5 px-4">Liberación precisa de <strong class="text-white font-medium">ligamentos de retención</strong> y reposicionamiento en bloque del <strong class="text-white font-medium">SMAS</strong> y compartimentos grasos con instrumental endoscópico.</td>
-                                <td class="py-3.5 px-4">Enfocado en <strong class="text-white font-medium">tercio medio, mandíbula, jowls y cuello</strong>. Corrección de surcos nasogenianos, definición del reborde mandibular y tensado cervical <strong class="text-white font-medium">sin tracción cutánea</strong>.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="relative w-full aspect-video rounded-sm overflow-hidden border border-outline/30 bg-[#111] shadow-2xl">
+                    <iframe 
+                        src="https://www.youtube-nocookie.com/embed/mX_6p5DBUPY" 
+                        title="Lifting Endoscópico: rejuvenecimiento facial sin cicatrices visibles | Dr. Leandro Vila" 
+                        class="absolute inset-0 w-full h-full" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
                 </div>
+            </div>
+        </section>
 
-                <!-- Bloque ¿Deep Plane o Endoscópico? -->
-                <div class="p-5 rounded-sm bg-surface border border-outline/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <!-- 4. ESPACIO DE PUBLICACIONES DE INSTAGRAM (@drleandrovila) -->
+        <section id="instagram" class="py-14 sm:py-18 bg-surface border-t border-outline/10">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
                     <div>
-                        <h3 class="font-montserrat text-sm font-bold text-white mb-1">Tecnología e instrumental endoscópico en cirugía facial</h3>
-                        <p class="text-xs text-on-surface-variant font-light">
-                            Ambos abordajes utilizan <strong class="text-white font-medium">tecnología y magnificación endoscópica</strong> de alta precisión: el <strong class="text-white font-medium">lifting endoscópico</strong> trata el tercio superior (frente y cejas), mientras que el <strong class="text-white font-medium">Deep Plane Facelift endoscópico</strong> rejuvenece tercio medio, mandíbula y cuello sin tensión en la piel.
+                        <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-2 block font-semibold">Casos y Publicaciones</span>
+                        <h2 class="font-montserrat text-2xl sm:text-3xl text-white font-bold leading-tight">
+                            Publicaciones de Instagram · @drleandrovila
+                        </h2>
+                        <p class="text-xs sm:text-sm text-on-surface-variant font-light mt-1">
+                            Casos reales, antes y después y contenido educativo en la cuenta oficial del Dr. Leandro Vila.
                         </p>
                     </div>
-                    <a href="https://wa.me/5491139583670?text=Hola%2C%20vengo%20de%20la%20web%20de%20Lifting." data-ref="tecnicas" class="whitespace-nowrap bg-accent-teal text-on-primary px-5 py-2.5 rounded-sm text-xs uppercase font-bold tracking-wider hover:brightness-110 transition-all">
-                        Evaluar mi caso
+                    <a href="https://www.instagram.com/drleandrovila/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border border-accent-teal text-accent-teal hover:bg-accent-teal hover:text-on-primary px-5 py-2.5 rounded-sm text-xs uppercase tracking-wider font-bold transition-all self-start sm:self-auto whitespace-nowrap">
+                        <span>Ver perfil @drleandrovila</span>
+                        <span class="material-symbols-outlined text-base">open_in_new</span>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3.5 sm:gap-5">
+                    <!-- Publicación IG 1 -->
+                    <a href="https://www.instagram.com/drleandrovila/" target="_blank" rel="noopener noreferrer" class="group block rounded-sm overflow-hidden bg-surface-container-low border border-outline/20 hover:border-accent-teal/60 transition-all">
+                        <div class="aspect-[4/5] overflow-hidden bg-[#111]">
+                            <img src="./deep-plane-lifting.jpg" alt="Publicación de Instagram Dr. Leandro Vila - Deep Plane Facelift Antes y Después" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <span class="text-[0.62rem] uppercase tracking-wider text-accent-teal font-bold block mb-0.5">@drleandrovila</span>
+                            <p class="text-xs text-white font-medium line-clamp-2">Deep Plane Lifting: reposición de tercio medio y mandíbula.</p>
+                        </div>
+                    </a>
+
+                    <!-- Publicación IG 2 -->
+                    <a href="https://www.instagram.com/drleandrovila/" target="_blank" rel="noopener noreferrer" class="group block rounded-sm overflow-hidden bg-surface-container-low border border-outline/20 hover:border-accent-teal/60 transition-all">
+                        <div class="aspect-[4/5] overflow-hidden bg-[#111]">
+                            <img src="./pony-rino.jpg" alt="Publicación de Instagram Dr. Leandro Vila - Ponytail Lifting Endoscópico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <span class="text-[0.62rem] uppercase tracking-wider text-accent-teal font-bold block mb-0.5">@drleandrovila</span>
+                            <p class="text-xs text-white font-medium line-clamp-2">Ponytail Lifting Endoscópico + Rinoplastia Ultrasónica.</p>
+                        </div>
+                    </a>
+
+                    <!-- Publicación IG 3 -->
+                    <a href="https://www.instagram.com/drleandrovila/" target="_blank" rel="noopener noreferrer" class="group block rounded-sm overflow-hidden bg-surface-container-low border border-outline/20 hover:border-accent-teal/60 transition-all">
+                        <div class="aspect-[4/5] overflow-hidden bg-[#111]">
+                            <img src="./endoscopic-lifting.jpeg" alt="Publicación de Instagram Dr. Leandro Vila - Lifting Facial Masculino" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <span class="text-[0.62rem] uppercase tracking-wider text-accent-teal font-bold block mb-0.5">@drleandrovila</span>
+                            <p class="text-xs text-white font-medium line-clamp-2">Lifting Endoscópico masculino con expresión natural.</p>
+                        </div>
+                    </a>
+
+                    <!-- Publicación IG 4 -->
+                    <a href="https://www.instagram.com/drleandrovila/" target="_blank" rel="noopener noreferrer" class="group block rounded-sm overflow-hidden bg-surface-container-low border border-outline/20 hover:border-accent-teal/60 transition-all">
+                        <div class="aspect-[4/5] overflow-hidden bg-[#111]">
+                            <img src="./consul.jpg" alt="Publicación de Instagram Dr. Leandro Vila - Evaluación en Consultorio Puerto Madero" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <span class="text-[0.62rem] uppercase tracking-wider text-accent-teal font-bold block mb-0.5">@drleandrovila</span>
+                            <p class="text-xs text-white font-medium line-clamp-2">Planificación quirúrgica personalizada en Puerto Madero.</p>
+                        </div>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN: VIDEO EXPLICATIVO DE LIFTING -->
-        <section id="video" class="py-14 sm:py-20 bg-surface border-t border-outline/10">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
-                <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-                    <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-2 block font-semibold">Explicación Quirúrgica</span>
-                    <h2 class="font-montserrat text-2xl sm:text-3xl md:text-4xl text-white font-bold leading-tight mb-3">
-                        Lifting Facial: Técnica y Abordaje en Video
-                    </h2>
-                    <p class="text-xs sm:text-sm text-on-surface-variant font-light">
-                        El Dr. Leandro Vila explica en detalle la técnica de rejuvenecimiento facial, incisiones anatómicas y resultados naturales.
-                    </p>
-                </div>
-                <div class="max-w-4xl mx-auto">
-                    <div class="relative w-full aspect-video rounded-sm overflow-hidden border border-outline/30 bg-[#111] shadow-2xl group transition-all duration-500 hover:shadow-[0_0_50px_rgba(46,196,182,0.15)] hover:border-accent-teal/50">
-                        <iframe 
-                            src="https://www.youtube-nocookie.com/embed/mX_6p5DBUPY" 
-                            title="Lifting Endoscópico: rejuvenecimiento facial sin cicatrices visibles | Dr. Leandro Vila" 
-                            class="absolute inset-0 w-full h-full" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" 
-                            loading="lazy"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="mt-6 sm:mt-8 text-center">
-                        <h3 class="font-montserrat text-xl sm:text-2xl text-white mb-2 font-bold">Lifting Endoscópico Facial</h3>
-                        <p class="text-on-surface-variant text-xs sm:text-sm md:text-base leading-relaxed font-light max-w-2xl mx-auto px-2">
-                            Técnica mínimamente invasiva de rejuvenecimiento facial. A través de incisiones milimétricas ocultas en el cuero cabelludo, tratamos el tercio superior y medio del rostro, logrando resultados sumamente naturales, elegantes y duraderos con una recuperación más rápida.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN: CASOS REALES -->
-        <section id="casos" class="py-14 sm:py-18 bg-surface-container-low border-t border-outline/10">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
-                <div class="text-center max-w-2xl mx-auto mb-8">
-                    <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-2 block font-semibold">Evidencia Clínica</span>
-                    <h2 class="font-montserrat text-2xl sm:text-3xl text-white font-bold leading-tight mb-2">
-                        Casos Clínicos de Rejuvenecimiento Facial
-                    </h2>
-                    <p class="text-xs sm:text-sm text-on-surface-variant font-light">
-                        Resultados reales con consentimiento de pacientes del Dr. Leandro Vila en Buenos Aires.
-                    </p>
-                </div>
-
-                <!-- Tarjeta del Caso Velvet -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center p-6 rounded-sm bg-surface-container-low border border-outline/20 mb-6">
-                    <div class="md:col-span-7 space-y-3">
-                        <span class="text-accent-teal text-[0.65rem] uppercase tracking-widest font-bold block">Caso Clínico Velvet</span>
-                        <h3 class="font-montserrat text-xl sm:text-2xl text-white font-bold">Ponytail Lift + Rinoplastia Ultrasónica</h3>
-                        <p class="text-xs sm:text-sm text-on-surface-variant font-light leading-relaxed">
-                            Elevación endoscópica del <strong class="text-white font-medium">tercio superior y pómulos</strong> mediante incisiones ocultas en el cuero cabelludo, combinada con <strong class="text-white font-medium">remodelación nasal piezoeléctrica</strong> para un resultado armónico y natural.
-                        </p>
-                        <div class="pt-2">
-                            <a href="./casos-clinicos/" class="text-xs text-accent-teal underline hover:text-white transition-colors">
-                                Ver detalles de este caso y más intervenciones →
-                            </a>
-                        </div>
-                    </div>
-                    <div class="md:col-span-5 flex justify-center">
-                        <div class="relative overflow-hidden rounded-sm border border-outline/30 bg-[#111] max-w-[320px] w-full">
-                            <img src="./pony-rino.jpg" alt="Caso clínico Ponytail Lift y Rinoplastia Ultrasónica - Dr. Leandro Vila" class="w-full h-auto object-cover">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="p-4 rounded-sm bg-surface-container-high border border-outline/10 text-center">
-                    <p class="text-xs text-on-surface-variant font-light">
-                        <strong class="text-white font-semibold">Casos de Deep Plane Facelift:</strong> Por estricto respeto a la privacidad del paciente y la confidencialidad médica, las fotografías comparativas de <strong class="text-white font-medium">cirugía de lifting facial profundo</strong> se evalúan de forma privada durante la consulta médica presencial.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN: SOBRE EL DR. LEANDRO VILA (LIMPIA, SIN PLACEHOLDERS) -->
+        <!-- 5. BIOGRAFÍA COMPLETA DEL DR. LEANDRO VILA -->
         <section id="dr-vila" class="py-14 sm:py-20 bg-surface-container-low border-t border-outline/10">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-14 items-center">
-                    <!-- Retrato -->
-                    <div class="md:col-span-5 relative">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
+                    <!-- Columna Foto e Indicadores -->
+                    <div class="md:col-span-5">
                         <div class="aspect-[4/5] overflow-hidden rounded-sm relative shadow-2xl max-w-[340px] mx-auto border border-outline/20">
                             <img src="./home-1.jpg" 
                                  alt="Dr. Leandro Vila, Cirujano Plástico Especialista en Cirugía Facial en Buenos Aires" 
                                  class="w-full h-full object-cover">
                         </div>
-                        <div class="absolute -bottom-3 left-4 bg-surface-container-high px-4 py-3 border-l-4 border-accent-teal z-20 shadow-xl">
-                            <p class="font-montserrat text-base sm:text-xl text-white font-bold">M.N. 147814</p>
-                            <p class="text-[0.6rem] text-accent-teal font-bold uppercase tracking-wider">Matrícula Nacional</p>
+                        <div class="grid grid-cols-3 gap-2.5 mt-4 max-w-[340px] mx-auto text-center">
+                            <div class="p-2.5 rounded-sm bg-surface border border-outline/15">
+                                <p class="font-montserrat text-base sm:text-xl text-accent-teal font-bold">+15</p>
+                                <p class="text-[0.6rem] uppercase tracking-wider text-on-surface-variant">Años Formación</p>
+                            </div>
+                            <div class="p-2.5 rounded-sm bg-surface border border-outline/15">
+                                <p class="font-montserrat text-base sm:text-xl text-accent-teal font-bold">+500</p>
+                                <p class="text-[0.6rem] uppercase tracking-wider text-on-surface-variant">Procedimientos</p>
+                            </div>
+                            <div class="p-2.5 rounded-sm bg-surface border border-outline/15">
+                                <p class="font-montserrat text-base sm:text-xl text-accent-teal font-bold">SACPER</p>
+                                <p class="text-[0.6rem] uppercase tracking-wider text-on-surface-variant">Miembro Titular</p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Datos Médicos Verificados -->
-                    <div class="md:col-span-7 flex flex-col justify-center">
-                        <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-2 font-semibold">Cirujano Especialista</span>
-                        <h2 class="font-montserrat text-2xl sm:text-3xl md:text-4xl text-white font-bold mb-1">
-                            Dr. Leandro Vila
-                        </h2>
-                        <h3 class="font-montserrat text-xs sm:text-sm text-accent-teal uppercase tracking-wider font-semibold mb-4">
-                            Cirujano Plástico especializado en cirugía facial
-                        </h3>
-
-                        <div class="space-y-3 text-on-surface-variant leading-relaxed text-xs sm:text-sm font-light mb-6">
-                            <p>
-                                El Dr. Leandro Vila es <strong class="text-white font-semibold">médico cirujano plástico</strong> (M.N. 147814) especializado en procedimientos avanzados de <strong class="text-white font-semibold">Deep Plane Facelift en Buenos Aires</strong>, <strong class="text-white font-semibold">lifting endoscópico</strong> y <strong class="text-white font-semibold">rejuvenecimiento facial de alta precisión anatómica</strong>.
-                            </p>
-                            <p>
-                                Es <strong class="text-white font-semibold">Miembro Titular de SACPER</strong> (Sociedad Argentina de Cirugía Plástica, Estética y Reparadora). Brinda atención personalizada en su consultorio de <strong class="text-white font-semibold">Puerto Madero</strong> a pacientes de la Ciudad de Buenos Aires, el interior de Argentina e internacionales.
-                            </p>
-                        </div>
-
-                        <!-- Indicadores de Autoridad -->
-                        <div class="grid grid-cols-3 gap-3 mb-6 pt-4 border-t border-outline/15 text-center">
-                            <div class="p-2.5 rounded-sm bg-surface border border-outline/10">
-                                <p class="font-montserrat text-lg sm:text-2xl text-accent-teal font-bold">+15</p>
-                                <p class="text-[0.62rem] uppercase tracking-wider text-on-surface-variant">Años Formación</p>
-                            </div>
-                            <div class="p-2.5 rounded-sm bg-surface border border-outline/10">
-                                <p class="font-montserrat text-lg sm:text-2xl text-accent-teal font-bold">+500</p>
-                                <p class="text-[0.62rem] uppercase tracking-wider text-on-surface-variant">Procedimientos</p>
-                            </div>
-                            <div class="p-2.5 rounded-sm bg-surface border border-outline/10">
-                                <p class="font-montserrat text-lg sm:text-2xl text-accent-teal font-bold">SACPER</p>
-                                <p class="text-[0.62rem] uppercase tracking-wider text-on-surface-variant">Miembro Titular</p>
-                            </div>
-                        </div>
-
+                    <!-- Columna Biografía Completa y Credenciales -->
+                    <div class="md:col-span-7 space-y-4">
                         <div>
-                            <a href="./dr-leandro-vila/" 
-                               class="inline-block bg-accent-teal text-on-primary px-7 py-3 rounded-sm text-[0.68rem] sm:text-xs uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all">
-                                Conocer al Dr. Leandro Vila
-                            </a>
+                            <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-1 block font-semibold">Biografía Profesional y Credenciales</span>
+                            <h2 class="font-montserrat text-2xl sm:text-3xl md:text-4xl text-white font-bold">
+                                Dr. Leandro Vila
+                            </h2>
+                            <p class="font-montserrat text-xs sm:text-sm text-accent-teal uppercase tracking-wider font-semibold mt-1">
+                                Especialista en Cirugía Plástica, Estética y Reparadora (M.N. 147814)
+                            </p>
+                        </div>
+
+                        <div class="space-y-3 text-on-surface-variant leading-relaxed text-xs sm:text-sm font-light">
+                            <p>
+                                El <strong class="text-white font-semibold">Dr. Leandro Vila</strong> es médico especialista en <strong class="text-white font-semibold">Cirugía Plástica, Estética y Reparadora</strong> dedicado con exclusividad a la anatomía y al rejuvenecimiento quirúrgico facial en Buenos Aires. Está registrado y habilitado por el Ministerio de Salud de la República Argentina (<strong class="text-white font-semibold">M.N. 147814</strong>) y es <strong class="text-white font-semibold">Miembro Titular de SACPER</strong> (Sociedad Argentina de Cirugía Plástica, Estética y Reparadora).
+                            </p>
+                            <p>
+                                A lo largo de su carrera ha orientado su formación médica y perfeccionamiento quirúrgico hacia técnicas de plano profundo —como el <strong class="text-white font-semibold">Deep Plane Facelift</strong>, el <strong class="text-white font-semibold">Lifting Endoscópico</strong> y la <strong class="text-white font-semibold">Rinoplastia Ultrasónica</strong>— que respetan la estructura natural del rostro, evitando estigmas de tracción cutánea o rigidez en la expresión.
+                            </p>
+                            <p>
+                                Su filosofía quirúrgica sostiene que el éxito de una cirugía facial reside en su invisibilidad técnica: lograr que el paciente se perciba fresco, descansado y armónico sin que resulte evidente que ha sido intervenido. Realiza sus intervenciones en centros sanatoriales de alta complejidad de CABA y atiende en su consultorio de <strong class="text-white font-semibold">Puerto Madero</strong> a pacientes de Buenos Aires, el interior de Argentina y del exterior.
+                            </p>
+                        </div>
+
+                        <ul class="text-xs text-on-surface-variant space-y-1.5 pt-2 border-t border-outline/15">
+                            <li class="flex items-start gap-2"><span class="text-accent-teal font-bold">✓</span> <span><strong class="text-white">Título Profesional:</strong> Médico Especialista en Cirugía Plástica, Estética y Reparadora (M.N. 147814).</span></li>
+                            <li class="flex items-start gap-2"><span class="text-accent-teal font-bold">✓</span> <span><strong class="text-white">Sociedad Científica:</strong> Miembro Titular de la Sociedad Argentina de Cirugía Plástica, Estética y Reparadora (SACPER).</span></li>
+                            <li class="flex items-start gap-2"><span class="text-accent-teal font-bold">✓</span> <span><strong class="text-white">Especialización:</strong> Planos anatómicos profundos (Deep Plane), Lifting Endoscópico Facial y Rinoplastia Ultrasónica.</span></li>
+                            <li class="flex items-start gap-2"><span class="text-accent-teal font-bold">✓</span> <span><strong class="text-white">Sede Quirúrgica y Consultorio:</strong> Centros sanatoriales de alta complejidad en CABA y consultorio en Aimé Painé 1665, Puerto Madero.</span></li>
+                        </ul>
+
+                        <!-- Opinión destacada de paciente integrada -->
+                        <div class="p-4 rounded-sm bg-surface border-l-4 border-accent-teal mt-4">
+                            <p class="text-xs text-on-surface-variant italic leading-relaxed mb-1.5">
+                                “Desde la primera consulta hasta el alta, todo fue impecable: profesionalismo, calidez y un acompañamiento constante. Quiero agradecer especialmente al Dr. Vila por su excelente trabajo, su claridad para explicar cada paso y la tranquilidad que transmite.”
+                            </p>
+                            <p class="text-[0.65rem] font-montserrat font-bold uppercase tracking-wider text-accent-teal">★★★★★ Petu Baez · Opinión de Google</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN TESTIMONIO GOOGLE -->
-        <section class="py-12 bg-accent-teal text-on-primary">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-                <span class="material-symbols-outlined text-3xl mb-2" style='font-variation-settings: "FILL" 1;'>format_quote</span>
-                <p class="font-montserrat text-sm sm:text-lg leading-relaxed font-medium mb-4">
-                    “Desde la primera consulta hasta el alta, todo fue impecable: profesionalismo, calidez y un acompañamiento constante. Quiero agradecer especialmente al Dr. Vila por su excelente trabajo, su claridad para explicar cada paso y la tranquilidad que transmite.”
-                </p>
-                <div class="flex flex-col items-center">
-                    <div class="flex gap-1 mb-1">
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                    </div>
-                    <p class="font-bold tracking-widest text-xs uppercase">Petu Baez · Opinión de Google</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN PREGUNTAS FRECUENTES CLAVE (6 ESENCIALES) -->
-        <section id="preguntas" class="py-14 sm:py-18 bg-surface-container-low border-t border-outline/10">
+        <!-- 6. PREGUNTAS FRECUENTES COMPLETAS (TODO EXPLICADO EN FORMATO FAQ) -->
+        <section id="preguntas" class="py-14 sm:py-18 bg-surface border-t border-outline/10">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="text-center mb-8">
-                    <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-2 block font-semibold">Dudas Frecuentes</span>
+                    <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-2 block font-semibold">Guía Completa en Preguntas y Respuestas</span>
                     <h2 class="font-montserrat text-2xl sm:text-3xl text-white font-bold leading-tight">
-                        Preguntas frecuentes sobre Deep Plane y Lifting Facial
+                        Preguntas Frecuentes sobre Deep Plane y Lifting Facial
                     </h2>
+                    <p class="text-xs sm:text-sm text-on-surface-variant font-light mt-1">
+                        Todo lo que necesitás saber sobre el procedimiento, zonas tratadas, cicatrices y recuperación.
+                    </p>
                 </div>
 
                 <div class="space-y-3">
                     <!-- FAQ 1 -->
-                    <div class="faq-item border border-outline/20 rounded-sm bg-[#1c1b1b]/80 backdrop-blur-sm transition-all duration-300 overflow-hidden" data-faq-item>
+                    <div class="faq-item border border-outline/20 rounded-sm bg-surface-container-low transition-all duration-300 overflow-hidden" data-faq-item>
                         <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-xs sm:text-sm hover:text-accent-teal transition-colors focus:outline-none" data-faq-toggle>
-                            <span>¿Qué es un Deep Plane Facelift?</span>
+                            <span>¿Qué es el Deep Plane Facelift y por qué logra resultados naturales?</span>
                             <span class="material-symbols-outlined transform transition-transform duration-300 text-accent-teal text-lg flex-shrink-0" data-faq-icon>expand_more</span>
                         </button>
                         <div class="faq-answer max-h-0 transition-all duration-500 ease-in-out overflow-hidden" data-faq-content>
                             <div class="px-5 pb-4 text-on-surface-variant font-light leading-relaxed text-xs sm:text-sm border-t border-outline/10 pt-3">
-                                Es una técnica de <strong class="text-white font-medium">cirugía facial avanzada</strong> que trabaja por debajo del <strong class="text-white font-medium">plano músculo-aponeurótico (SMAS)</strong>. Permite liberar los <strong class="text-white font-medium">ligamentos de retención faciales</strong> y reposicionar en bloque las mejillas, el contorno mandibular y el cuello <strong class="text-white font-medium">sin tensión sobre la piel</strong>.
+                                Es la técnica más avanzada de <strong class="text-white font-medium">rejuvenecimiento facial</strong>. A diferencia del lifting tradicional que tracciona la piel, el <strong class="text-white font-medium">Deep Plane Facelift</strong> actúa por debajo del sistema músculo-aponeurótico superficial (<strong class="text-white font-medium">SMAS</strong>), liberando los ligamentos de retención faciales para reposicionar en bloque las estructuras profundas. Al no existir tensión sobre la piel, se evita por completo el aspecto artificial o estirado.
                             </div>
                         </div>
                     </div>
 
                     <!-- FAQ 2 -->
-                    <div class="faq-item border border-outline/20 rounded-sm bg-[#1c1b1b]/80 backdrop-blur-sm transition-all duration-300 overflow-hidden" data-faq-item>
+                    <div class="faq-item border border-outline/20 rounded-sm bg-surface-container-low transition-all duration-300 overflow-hidden" data-faq-item>
                         <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-xs sm:text-sm hover:text-accent-teal transition-colors focus:outline-none" data-faq-toggle>
-                            <span>¿Cuál es la diferencia entre Deep Plane y lifting tradicional?</span>
+                            <span>¿Cuál es la diferencia entre Lifting Endoscópico y Deep Plane Facelift Endoscópico?</span>
                             <span class="material-symbols-outlined transform transition-transform duration-300 text-accent-teal text-lg flex-shrink-0" data-faq-icon>expand_more</span>
                         </button>
                         <div class="faq-answer max-h-0 transition-all duration-500 ease-in-out overflow-hidden" data-faq-content>
                             <div class="px-5 pb-4 text-on-surface-variant font-light leading-relaxed text-xs sm:text-sm border-t border-outline/10 pt-3">
-                                El <strong class="text-white font-medium">lifting tradicional</strong> tensaba la piel superficialmente, lo que podía producir un aspecto estirado o artificial. El <strong class="text-white font-medium">Deep Plane Facelift</strong> moviliza las estructuras musculares profundas, permitiendo que la piel descanse con una <strong class="text-white font-medium">expresión completamente natural</strong>.
+                                Ambos procedimientos utilizan <strong class="text-white font-medium">tecnología e instrumental endoscópico</strong>, pero tratan distintas zonas anatómicas: el <strong class="text-white font-medium">Lifting Endoscópico</strong> se enfoca en el tercio superior (cejas, frente y mirada) mediante microincisiones en el cuero cabelludo; el <strong class="text-white font-medium">Deep Plane Facelift Endoscópico</strong> reposiciona el tercio medio, surcos nasogenianos, mandíbula (jowls) y cuello. Pueden realizarse por separado o combinados.
                             </div>
                         </div>
                     </div>
 
                     <!-- FAQ 3 -->
-                    <div class="faq-item border border-outline/20 rounded-sm bg-[#1c1b1b]/80 backdrop-blur-sm transition-all duration-300 overflow-hidden" data-faq-item>
+                    <div class="faq-item border border-outline/20 rounded-sm bg-surface-container-low transition-all duration-300 overflow-hidden" data-faq-item>
+                        <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-xs sm:text-sm hover:text-accent-teal transition-colors focus:outline-none" data-faq-toggle>
+                            <span>¿Cuál es la diferencia entre el Deep Plane y un lifting SMAS convencional?</span>
+                            <span class="material-symbols-outlined transform transition-transform duration-300 text-accent-teal text-lg flex-shrink-0" data-faq-icon>expand_more</span>
+                        </button>
+                        <div class="faq-answer max-h-0 transition-all duration-500 ease-in-out overflow-hidden" data-faq-content>
+                            <div class="px-5 pb-4 text-on-surface-variant font-light leading-relaxed text-xs sm:text-sm border-t border-outline/10 pt-3">
+                                En una plicatura de SMAS convencional se pliega la capa muscular lateralmente sin liberar los anclajes profundos. En el <strong class="text-white font-medium">Deep Plane</strong> se ingresa al espacio sub-SMAS para liberar directamente los <strong class="text-white font-medium">ligamentos cigomáticos y mandibulares</strong>, logrando una elevación vertical real del tercio medio y del contorno mandibular.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item border border-outline/20 rounded-sm bg-surface-container-low transition-all duration-300 overflow-hidden" data-faq-item>
+                        <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-xs sm:text-sm hover:text-accent-teal transition-colors focus:outline-none" data-faq-toggle>
+                            <span>¿Qué zonas del rostro y cuello mejora el Deep Plane Facelift?</span>
+                            <span class="material-symbols-outlined transform transition-transform duration-300 text-accent-teal text-lg flex-shrink-0" data-faq-icon>expand_more</span>
+                        </button>
+                        <div class="faq-answer max-h-0 transition-all duration-500 ease-in-out overflow-hidden" data-faq-content>
+                            <div class="px-5 pb-4 text-on-surface-variant font-light leading-relaxed text-xs sm:text-sm border-t border-outline/10 pt-3">
+                                Actúa sobre cuatro áreas anatómicas principales: <strong class="text-white font-medium">1) Pómulos y tercio medio</strong> (restaura el volumen malar descendido), <strong class="text-white font-medium">2) Surcos nasogenianos</strong> (los atenúa sin necesidad de rellenos), <strong class="text-white font-medium">3) Mandíbula y jowls</strong> (redefine el reborde mandibular) y <strong class="text-white font-medium">4) Cuello y platisma</strong> (define el ángulo cervicomandibular).
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-item border border-outline/20 rounded-sm bg-surface-container-low transition-all duration-300 overflow-hidden" data-faq-item>
+                        <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-xs sm:text-sm hover:text-accent-teal transition-colors focus:outline-none" data-faq-toggle>
+                            <span>¿Quién es candidato/a ideal para este procedimiento?</span>
+                            <span class="material-symbols-outlined transform transition-transform duration-300 text-accent-teal text-lg flex-shrink-0" data-faq-icon>expand_more</span>
+                        </button>
+                        <div class="faq-answer max-h-0 transition-all duration-500 ease-in-out overflow-hidden" data-faq-content>
+                            <div class="px-5 pb-4 text-on-surface-variant font-light leading-relaxed text-xs sm:text-sm border-t border-outline/10 pt-3">
+                                Está indicado en hombres y mujeres que presentan descenso de las mejillas, pérdida de nitidez en la línea mandibular (<strong class="text-white font-medium">jowls</strong>) o flacidez cervical. No depende de una edad rígida sino de la anatomía y calidad tisular, evaluadas de forma personalizada por el <strong class="text-white font-medium">Dr. Leandro Vila</strong> en consulta.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="faq-item border border-outline/20 rounded-sm bg-surface-container-low transition-all duration-300 overflow-hidden" data-faq-item>
                         <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-xs sm:text-sm hover:text-accent-teal transition-colors focus:outline-none" data-faq-toggle>
                             <span>¿El Deep Plane deja cicatrices visibles?</span>
                             <span class="material-symbols-outlined transform transition-transform duration-300 text-accent-teal text-lg flex-shrink-0" data-faq-icon>expand_more</span>
                         </button>
                         <div class="faq-answer max-h-0 transition-all duration-500 ease-in-out overflow-hidden" data-faq-content>
                             <div class="px-5 pb-4 text-on-surface-variant font-light leading-relaxed text-xs sm:text-sm border-t border-outline/10 pt-3">
-                                Las incisiones se realizan siguiendo curvaturas anatómicas naturales en el <strong class="text-white font-medium">contorno de la oreja</strong> y la línea capilar. Al cerrarse sin tracción mecánica, las <strong class="text-white font-medium">cicatrices evolucionan de forma fina y prácticamente imperceptible</strong>.
+                                Las incisiones siguen pliegues anatómicos naturales en el <strong class="text-white font-medium">contorno de la oreja</strong> y la línea capilar. Dado que toda la tensión recae sobre el plano muscular profundo y la piel se sutura sin tracción mecánica, las <strong class="text-white font-medium">cicatrices evolucionan de forma fina y prácticamente imperceptible</strong>.
                             </div>
                         </div>
                     </div>
 
-                    <!-- FAQ 4 -->
-                    <div class="faq-item border border-outline/20 rounded-sm bg-[#1c1b1b]/80 backdrop-blur-sm transition-all duration-300 overflow-hidden" data-faq-item>
+                    <!-- FAQ 7 -->
+                    <div class="faq-item border border-outline/20 rounded-sm bg-surface-container-low transition-all duration-300 overflow-hidden" data-faq-item>
                         <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-xs sm:text-sm hover:text-accent-teal transition-colors focus:outline-none" data-faq-toggle>
-                            <span>¿Cómo es la recuperación y cuándo puedo volver al trabajo?</span>
+                            <span>¿Cómo es la recuperación y cuándo puedo volver a mis actividades?</span>
                             <span class="material-symbols-outlined transform transition-transform duration-300 text-accent-teal text-lg flex-shrink-0" data-faq-icon>expand_more</span>
                         </button>
                         <div class="faq-answer max-h-0 transition-all duration-500 ease-in-out overflow-hidden" data-faq-content>
                             <div class="px-5 pb-4 text-on-surface-variant font-light leading-relaxed text-xs sm:text-sm border-t border-outline/10 pt-3">
-                                La inflamación inicial remite gradualmente. La mayoría de los pacientes retoma tareas de oficina y salidas cotidianas livianas entre los <strong class="text-white font-medium">10 y 14 días posteriores</strong> al <strong class="text-white font-medium">lifting facial</strong>.
+                                La inflamación inicial disminuye progresivamente durante la primera semana. La mayoría de los pacientes retoma tareas de oficina y salidas cotidianas livianas entre los <strong class="text-white font-medium">10 y 14 días posteriores</strong>, y actividad física intensa a partir de las 3 a 4 semanas.
                             </div>
                         </div>
                     </div>
 
-                    <!-- FAQ 5 -->
-                    <div class="faq-item border border-outline/20 rounded-sm bg-[#1c1b1b]/80 backdrop-blur-sm transition-all duration-300 overflow-hidden" data-faq-item>
+                    <!-- FAQ 8 -->
+                    <div class="faq-item border border-outline/20 rounded-sm bg-surface-container-low transition-all duration-300 overflow-hidden" data-faq-item>
                         <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-xs sm:text-sm hover:text-accent-teal transition-colors focus:outline-none" data-faq-toggle>
-                            <span>¿Cuánto duran los resultados?</span>
+                            <span>¿Cuánto duran los resultados de la cirugía?</span>
                             <span class="material-symbols-outlined transform transition-transform duration-300 text-accent-teal text-lg flex-shrink-0" data-faq-icon>expand_more</span>
                         </button>
                         <div class="faq-answer max-h-0 transition-all duration-500 ease-in-out overflow-hidden" data-faq-content>
                             <div class="px-5 pb-4 text-on-surface-variant font-light leading-relaxed text-xs sm:text-sm border-t border-outline/10 pt-3">
-                                Al reposicionar y fijar los <strong class="text-white font-medium">planos musculares profundos (SMAS)</strong>, los resultados ofrecen una durabilidad biológica notable, logrando un <strong class="text-white font-medium">rejuvenecimiento estable y duradero</strong> en el tiempo.
+                                Al reposicionar y fijar la estructura fibromuscular profunda (<strong class="text-white font-medium">SMAS</strong>), ofrece la mayor durabilidad biológica dentro del rejuvenecimiento facial, manteniendo un resultado estable y armónico a lo largo de los años.
                             </div>
                         </div>
                     </div>
-
-                    <!-- FAQ 6 -->
-                    <div class="faq-item border border-outline/20 rounded-sm bg-[#1c1b1b]/80 backdrop-blur-sm transition-all duration-300 overflow-hidden" data-faq-item>
-                        <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-xs sm:text-sm hover:text-accent-teal transition-colors focus:outline-none" data-faq-toggle>
-                            <span>¿Soy candidato para este procedimiento?</span>
-                            <span class="material-symbols-outlined transform transition-transform duration-300 text-accent-teal text-lg flex-shrink-0" data-faq-icon>expand_more</span>
-                        </button>
-                        <div class="faq-answer max-h-0 transition-all duration-500 ease-in-out overflow-hidden" data-faq-content>
-                            <div class="px-5 pb-4 text-on-surface-variant font-light leading-relaxed text-xs sm:text-sm border-t border-outline/10 pt-3">
-                                Si observás caída del tercio medio de la mejilla, pérdida del borde mandibular (<strong class="text-white font-medium">jowls</strong>) o flacidez en el cuello, podés ser candidato/a. La indicación se confirma en una <strong class="text-white font-medium">evaluación médica personalizada</strong>.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Enlace al Centro Completo de FAQs -->
-                <div class="mt-6 text-center">
-                    <a href="./preguntas-frecuentes/" class="text-xs text-accent-teal font-semibold hover:underline">
-                        Ver todas las preguntas frecuentes sobre cirugía facial →
-                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN DE CONTACTO & LOCAL SEO EN PUERTO MADERO -->
-        <section id="contacto" class="py-14 sm:py-20 bg-surface border-t border-outline/10">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+        <!-- 7. CONTACTO Y UBICACIÓN EN PUERTO MADERO -->
+        <section id="contacto" class="py-14 sm:py-18 bg-surface-container-low border-t border-outline/10">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                     <div>
                         <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-2 block font-semibold">Consultorio Médico</span>
                         <h2 class="font-montserrat text-2xl sm:text-3xl text-white font-bold mb-4">
-                            Deep Plane Facelift en Puerto Madero, Buenos Aires
+                            Evaluación en Puerto Madero, Buenos Aires
                         </h2>
                         
                         <div class="space-y-3 text-on-surface-variant font-light text-xs sm:text-sm">
@@ -836,20 +721,16 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
                         </div>
 
                         <div class="mt-6 flex flex-wrap gap-3">
-                            <a href="https://maps.google.com/?q=Aim%C3%A9%20Pain%C3%A9%201665%20Buenos%20Aires" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               class="border border-accent-teal text-accent-teal hover:bg-accent-teal hover:text-on-primary px-5 py-2.5 rounded-sm text-xs uppercase tracking-wider font-bold transition-all">
-                                Cómo llegar
+                            <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20consultar%20por%20Deep%20Plane%20Facelift%20en%20Puerto%20Madero." data-ref="contacto" class="bg-accent-teal text-on-primary px-6 py-3 rounded-sm text-xs uppercase tracking-wider font-black teal-glow hover:brightness-110 transition-all">
+                                Solicitar evaluación por WhatsApp
                             </a>
-                            <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20consultar%20por%20Deep%20Plane%20Facelift%20en%20Puerto%20Madero." data-ref="contacto" class="bg-accent-teal text-on-primary px-5 py-2.5 rounded-sm text-xs uppercase tracking-wider font-black teal-glow hover:brightness-110 transition-all">
-                                Escribir por WhatsApp
+                            <a href="https://maps.google.com/?q=Aim%C3%A9%20Pain%C3%A9%201665%20Buenos%20Aires" target="_blank" rel="noopener noreferrer" class="border border-accent-teal text-accent-teal hover:bg-accent-teal hover:text-on-primary px-5 py-3 rounded-sm text-xs uppercase tracking-wider font-bold transition-all">
+                                Cómo llegar
                             </a>
                         </div>
                     </div>
 
-                    <!-- Mapa -->
-                    <div class="relative rounded-sm overflow-hidden border border-outline/20 shadow-xl h-[240px] sm:h-[320px]">
+                    <div class="relative rounded-sm overflow-hidden border border-outline/20 shadow-xl h-[240px] sm:h-[290px]">
                         <iframe title="Ubicación del consultorio del Dr. Leandro Vila en Aimé Painé 1665, Puerto Madero" 
                                 class="w-full h-full grayscale brightness-90" 
                                 loading="lazy" 
@@ -860,87 +741,25 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
                 </div>
             </div>
         </section>
-
-        <!-- CTA FINAL -->
-        <section class="py-12 sm:py-16 bg-surface-container-low border-t border-outline/10 text-center">
-            <div class="max-w-3xl mx-auto px-4 sm:px-6">
-                <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-2 block font-semibold">Planificación Quirúrgica</span>
-                <h2 class="font-montserrat text-2xl sm:text-3xl text-white font-bold mb-3">
-                    Planifiquemos tu evaluación médica
-                </h2>
-                <p class="text-on-surface-variant text-xs sm:text-sm font-light leading-relaxed max-w-xl mx-auto mb-6">
-                    Cada intervención comienza con un análisis exhaustivo de tu anatomía para definir el plan de <strong class="text-white font-medium">rejuvenecimiento facial natural</strong> más adecuado para tu rostro.
-                </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-                    <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20solicitar%20una%20evaluaci%C3%B3n%20m%C3%A9dica%20para%20rejuvenecimiento%20facial." data-ref="cta-final" class="w-full sm:w-auto bg-accent-teal text-on-primary px-8 py-3.5 rounded-sm text-xs uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all">
-                        Solicitar evaluación
-                    </a>
-                    <a href="./dr-leandro-vila/" 
-                       class="w-full sm:w-auto border border-outline/40 hover:border-accent-teal text-white hover:text-accent-teal px-7 py-3.5 rounded-sm text-xs uppercase tracking-widest font-semibold transition-all">
-                        Conocer al Dr. Vila
-                    </a>
-                </div>
-                <p class="text-[0.68rem] text-on-surface-variant/50 font-light mt-6">
-                    La información de este sitio tiene carácter informativo y no reemplaza una evaluación médica presencial.
-                </p>
-            </div>
-        </section>
     </main>
 
-    <!-- FOOTER ORDENADO -->
-    <footer class="bg-[#131313] w-full py-10 px-4 sm:px-6 md:px-8 border-t border-[#3c4947]/15">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 max-w-7xl mx-auto text-xs">
-            <div class="space-y-2">
-                <div class="font-montserrat font-bold text-white text-base tracking-tight">Dr. Leandro Vila</div>
-                <p class="text-[#c8c6c6] leading-relaxed">
-                    Médico Cirujano Plástico (M.N. 147814). Especialista en Deep Plane Facelift, lifting endoscópico y rejuvenecimiento facial en Buenos Aires. Miembro Titular SACPER.
-                </p>
+    <!-- FOOTER COMPACTO -->
+    <footer class="bg-[#111] w-full py-8 px-4 sm:px-6 md:px-8 border-t border-[#3c4947]/15">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-xs text-[#c8c6c6]">
+            <div>
+                <p class="font-montserrat font-bold text-white text-sm">Dr. Leandro Vila · M.N. 147814</p>
+                <p class="text-[0.68rem] text-on-surface-variant/70 mt-0.5">Cirujano Plástico Especialista · Miembro Titular SACPER · Aimé Painé 1665, Puerto Madero, CABA.</p>
             </div>
-            
-            <div class="space-y-2">
-                <h4 class="font-montserrat uppercase text-[0.65rem] tracking-wider text-[#2EC4B6] font-bold">Procedimientos</h4>
-                <div class="flex flex-col gap-1.5 text-[#c8c6c6]">
-                    <a class="hover:text-white hover:underline decoration-[#2EC4B6]" href="./deep-plane-facelift-buenos-aires/">Deep Plane Facelift</a>
-                    <a class="hover:text-white hover:underline decoration-[#2EC4B6]" href="./lifting-facial/">Lifting Facial</a>
-                    <a class="hover:text-white hover:underline decoration-[#2EC4B6]" href="./lifting-endoscopico/">Lifting Endoscópico</a>
-                    <a class="hover:text-white hover:underline decoration-[#2EC4B6]" href="./casos-clinicos/">Casos Clínicos</a>
-                </div>
+            <div class="flex items-center gap-5 text-xs">
+                <a href="https://www.instagram.com/drleandrovila" target="_blank" rel="noopener noreferrer" class="hover:text-accent-teal transition-colors">Instagram</a>
+                <a href="https://www.youtube.com/@drleandrovila" target="_blank" rel="noopener noreferrer" class="hover:text-accent-teal transition-colors">YouTube</a>
+                <a href="tel:+5491139583670" class="hover:text-accent-teal transition-colors">011 15-3958-3670</a>
             </div>
-
-            <div class="space-y-2">
-                <h4 class="font-montserrat uppercase text-[0.65rem] tracking-wider text-[#2EC4B6] font-bold">Información</h4>
-                <div class="flex flex-col gap-1.5 text-[#c8c6c6]">
-                    <a class="hover:text-white hover:underline decoration-[#2EC4B6]" href="./dr-leandro-vila/">Dr. Leandro Vila</a>
-                    <a class="hover:text-white hover:underline decoration-[#2EC4B6]" href="./preguntas-frecuentes/">Preguntas Frecuentes</a>
-                    <a class="hover:text-white hover:underline decoration-[#2EC4B6]" href="./contacto/">Ubicación y Contacto</a>
-                    <a class="hover:text-white hover:underline decoration-[#2EC4B6]" href="mailto:drleandrovila@gmail.com">drleandrovila@gmail.com</a>
-                </div>
-            </div>
-
-            <div class="space-y-2">
-                <h4 class="font-montserrat uppercase text-[0.65rem] tracking-wider text-[#2EC4B6] font-bold">Atención</h4>
-                <div class="flex flex-col gap-1.5 text-[#c8c6c6]">
-                    <p>Aimé Painé 1665, Puerto Madero, CABA</p>
-                    <a class="hover:text-white hover:underline decoration-[#2EC4B6]" href="tel:+5491139583670">Tel: 011 15-3958-3670</a>
-                    <a class="hover:text-white hover:underline decoration-[#2EC4B6]" href="https://www.instagram.com/drleandrovila" target="_blank" rel="noopener noreferrer">Instagram (@drleandrovila)</a>
-                    <a class="hover:text-white hover:underline decoration-[#2EC4B6]" href="https://www.youtube.com/@drleandrovila" target="_blank" rel="noopener noreferrer">YouTube</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="max-w-7xl mx-auto mt-8 pt-4 border-t border-[#3c4947]/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left text-[0.65rem] text-[#c8c6c6]/60">
-            <p>© 2024 Dr. Leandro Vila. Cirugía Plástica Facial en Buenos Aires. M.N. 147814.</p>
-            <p>Aimé Painé 1665, Puerto Madero, CABA.</p>
         </div>
     </footer>
 
-    <!-- Botón Flotante de WhatsApp Visible -->
+    <!-- Botón Flotante de WhatsApp -->
     <aside class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 flex items-center group" aria-label="Contacto directo por WhatsApp">
-        <div class="hidden sm:flex items-center mr-3 px-3 py-1.5 rounded-full bg-[#1c1b1b]/95 border border-[#25D366]/40 text-[#25D366] text-xs font-semibold shadow-xl backdrop-blur-md opacity-90 group-hover:opacity-100 transition-all pointer-events-none">
-            <span class="w-2 h-2 rounded-full bg-[#25D366] mr-2 animate-ping"></span>
-            ¿Consultas sobre Deep Plane?
-        </div>
-
         <a href="https://wa.me/5491139583670?text=Hola%20Dr.%20Vila%2C%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n%20para%20Deep%20Plane%20Facelift." 
            target="_blank" 
            rel="noopener noreferrer" data-ref="flotante" aria-label="Contactar por WhatsApp al Dr. Leandro Vila" 
