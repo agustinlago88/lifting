@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // IMPORTANTE: REEMPLAZAR TU_FORM_ID por el ID real de Formspree antes de publicar
     // Ejemplo: const FORMSPREE_ENDPOINT = "https://formspree.io/f/xabcdefg";
     // ============================================================================
-    const FORMSPREE_ENDPOINT = "https://formspree.io/f/TU_FORM_ID";
+    const FORMSPREE_ENDPOINT = "https://formspree.io/f/myeweapl";
 
     const leadForm = document.getElementById("lead-contact-form");
     if (leadForm) {
