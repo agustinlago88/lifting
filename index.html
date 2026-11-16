@@ -344,6 +344,7 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
                 <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal transition-colors" href="#instagram">Instagram</a>
                 <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal transition-colors" href="#dr-vila">Dr. Vila</a>
                 <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal transition-colors" href="#preguntas">FAQ</a>
+                <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-accent-teal font-semibold hover:brightness-110 transition-colors" href="#formulario-contacto">Dejar mis datos</a>
                 <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal transition-colors" href="#contacto">Contacto</a>
             </div>
             <div class="flex items-center gap-2">
@@ -363,6 +364,7 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
                 <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal py-1.5 border-b border-outline/10" href="#instagram">Publicaciones Instagram</a>
                 <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal py-1.5 border-b border-outline/10" href="#dr-vila">Biografía Dr. Vila</a>
                 <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal py-1.5 border-b border-outline/10" href="#preguntas">Preguntas Frecuentes (FAQ)</a>
+                <a class="font-montserrat text-xs uppercase tracking-widest text-accent-teal font-semibold hover:brightness-110 py-1.5 border-b border-outline/10" href="#formulario-contacto">Dejar mis datos</a>
                 <a class="font-montserrat text-xs uppercase tracking-widest text-[#c8c6c6] hover:text-accent-teal py-1.5" href="#contacto">Contacto</a>
             </div>
         </div>
@@ -777,8 +779,134 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
             </div>
         </section>
 
+        <!-- 6.5. FORMULARIO DE CONTACTO PARA CAPTURA DE LEADS -->
+        <!-- NOTA: Configurar FORMSPREE_ENDPOINT en app.js reemplazando TU_FORM_ID por el ID real de Formspree -->
+        <section id="formulario-contacto" class="py-14 sm:py-18 bg-surface-container-low border-t border-outline/10" aria-labelledby="form-contacto-heading">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="text-center mb-8">
+                    <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal mb-2 block font-semibold">Atención Personalizada</span>
+                    <h2 id="form-contacto-heading" class="font-montserrat text-2xl sm:text-3xl text-white font-bold leading-tight">
+                        Dejá tus datos para coordinar una evaluación
+                    </h2>
+                    <p class="text-xs sm:text-sm text-on-surface-variant font-light mt-1.5 max-w-xl mx-auto">
+                        Completá el formulario y el equipo del <strong class="text-white font-medium">Dr. Leandro Vila</strong> se comunicará con vos a la brevedad para brindarte información y coordinar tu consulta en Puerto Madero o de forma online.
+                    </p>
+                </div>
+
+                <div class="rounded-sm border border-outline/25 bg-surface p-6 sm:p-8 shadow-2xl">
+                    <form id="lead-contact-form" action="https://formspree.io/f/TU_FORM_ID" method="POST" novalidate class="space-y-5">
+                        <!-- Campo Honeypot anti-spam para bots (no completar) -->
+                        <div class="hidden" aria-hidden="true">
+                            <label for="lead-website">Sitio web (no completar)</label>
+                            <input type="text" id="lead-website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <!-- Nombre completo -->
+                            <div>
+                                <label for="lead-nombre" class="block font-montserrat text-xs uppercase tracking-wider text-white font-semibold mb-2">
+                                    Nombre completo <span class="text-accent-teal" aria-hidden="true">*</span>
+                                </label>
+                                <input type="text"
+                                       id="lead-nombre"
+                                       name="nombre"
+                                       required
+                                       aria-required="true"
+                                       aria-describedby="error-nombre"
+                                       autocomplete="name"
+                                       placeholder="Ej. María González"
+                                       class="w-full rounded-sm bg-surface-container-low border border-outline/40 px-4 py-3 text-xs sm:text-sm text-white placeholder-on-surface-variant/45 focus:border-accent-teal focus:ring-1 focus:ring-accent-teal focus:outline-none transition-colors">
+                                <p id="error-nombre" class="mt-1.5 text-xs text-red-400 hidden" aria-live="polite"></p>
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label for="lead-email" class="block font-montserrat text-xs uppercase tracking-wider text-white font-semibold mb-2">
+                                    Email <span class="text-accent-teal" aria-hidden="true">*</span>
+                                </label>
+                                <input type="email"
+                                       id="lead-email"
+                                       name="email"
+                                       required
+                                       aria-required="true"
+                                       aria-describedby="error-email"
+                                       autocomplete="email"
+                                       placeholder="tu@email.com"
+                                       class="w-full rounded-sm bg-surface-container-low border border-outline/40 px-4 py-3 text-xs sm:text-sm text-white placeholder-on-surface-variant/45 focus:border-accent-teal focus:ring-1 focus:ring-accent-teal focus:outline-none transition-colors">
+                                <p id="error-email" class="mt-1.5 text-xs text-red-400 hidden" aria-live="polite"></p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <!-- Teléfono -->
+                            <div>
+                                <label for="lead-telefono" class="block font-montserrat text-xs uppercase tracking-wider text-white font-semibold mb-2">
+                                    Teléfono / WhatsApp <span class="text-accent-teal" aria-hidden="true">*</span>
+                                </label>
+                                <input type="tel"
+                                       id="lead-telefono"
+                                       name="telefono"
+                                       required
+                                       aria-required="true"
+                                       aria-describedby="help-telefono error-telefono"
+                                       autocomplete="tel"
+                                       placeholder="+54 9 11 1234-5678"
+                                       class="w-full rounded-sm bg-surface-container-low border border-outline/40 px-4 py-3 text-xs sm:text-sm text-white placeholder-on-surface-variant/45 focus:border-accent-teal focus:ring-1 focus:ring-accent-teal focus:outline-none transition-colors">
+                                <p id="help-telefono" class="mt-1 text-[0.68rem] text-on-surface-variant/75 font-light">
+                                    Ingresá tu número en formato internacional con código de país y área (ej. +54 9 11 ...).
+                                </p>
+                                <p id="error-telefono" class="mt-1 text-xs text-red-400 hidden" aria-live="polite"></p>
+                            </div>
+
+                            <!-- Zona de interés -->
+                            <div>
+                                <label for="lead-zona" class="block font-montserrat text-xs uppercase tracking-wider text-white font-semibold mb-2">
+                                    Zona de interés <span class="text-[0.65rem] text-on-surface-variant/70 font-normal lowercase">(opcional)</span>
+                                </label>
+                                <select id="lead-zona"
+                                        name="zona_interes"
+                                        class="w-full rounded-sm bg-surface-container-low border border-outline/40 px-4 py-3 text-xs sm:text-sm text-white focus:border-accent-teal focus:ring-1 focus:ring-accent-teal focus:outline-none transition-colors">
+                                    <option value="">Seleccionar procedimiento...</option>
+                                    <option value="Deep Plane Facelift">Deep Plane Facelift</option>
+                                    <option value="Lifting endoscópico de cejas/frente">Lifting endoscópico de cejas/frente</option>
+                                    <option value="Rinoplastia ultrasónica">Rinoplastia ultrasónica</option>
+                                    <option value="No estoy seguro">No estoy seguro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Mensaje -->
+                        <div>
+                            <label for="lead-mensaje" class="block font-montserrat text-xs uppercase tracking-wider text-white font-semibold mb-2">
+                                Mensaje o consulta <span class="text-[0.65rem] text-on-surface-variant/70 font-normal lowercase">(opcional)</span>
+                            </label>
+                            <textarea id="lead-mensaje"
+                                      name="mensaje"
+                                      rows="3"
+                                      placeholder="Contanos brevemente tu consulta o disponibilidad horaria..."
+                                      class="w-full rounded-sm bg-surface-container-low border border-outline/40 px-4 py-3 text-xs sm:text-sm text-white placeholder-on-surface-variant/45 focus:border-accent-teal focus:ring-1 focus:ring-accent-teal focus:outline-none transition-colors resize-y"></textarea>
+                        </div>
+
+                        <!-- Mensaje general de estado (éxito / error de red) -->
+                        <div id="form-status-message" class="hidden rounded-sm p-4 text-xs sm:text-sm" aria-live="polite"></div>
+
+                        <div class="pt-1 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                            <p class="text-[0.68rem] text-on-surface-variant/70 font-light">
+                                Tus datos son tratados con estricta confidencialidad médica.
+                            </p>
+                            <button type="submit"
+                                    id="lead-submit-btn"
+                                    class="w-full sm:w-auto bg-accent-teal text-on-primary px-8 py-3.5 rounded-sm text-xs uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2">
+                                <span id="lead-submit-text">Enviar solicitud</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
         <!-- 7. CONTACTO Y UBICACIÓN EN PUERTO MADERO -->
-        <section id="contacto" class="py-14 sm:py-18 bg-surface-container-low border-t border-outline/10">
+        <section id="contacto" class="py-14 sm:py-18 bg-surface border-t border-outline/10">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                     <div>

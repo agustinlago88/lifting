@@ -128,4 +128,187 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
+
+    // ============================================================================
+    // CONFIGURACIÓN DE FORMSPREE PARA EL FORMULARIO DE CONTACTO
+    // IMPORTANTE: REEMPLAZAR TU_FORM_ID por el ID real de Formspree antes de publicar
+    // Ejemplo: const FORMSPREE_ENDPOINT = "https://formspree.io/f/xabcdefg";
+    // ============================================================================
+    const FORMSPREE_ENDPOINT = "https://formspree.io/f/TU_FORM_ID";
+
+    const leadForm = document.getElementById("lead-contact-form");
+    if (leadForm) {
+        const nombreInput = document.getElementById("lead-nombre");
+        const emailInput = document.getElementById("lead-email");
+        const telefonoInput = document.getElementById("lead-telefono");
+        const zonaInput = document.getElementById("lead-zona");
+        const mensajeInput = document.getElementById("lead-mensaje");
+        const honeypotInput = document.getElementById("lead-website");
+
+        const errorNombre = document.getElementById("error-nombre");
+        const errorEmail = document.getElementById("error-email");
+        const errorTelefono = document.getElementById("error-telefono");
+        const statusBox = document.getElementById("form-status-message");
+        const submitBtn = document.getElementById("lead-submit-btn");
+        const submitText = document.getElementById("lead-submit-text");
+
+        const setFieldError = (inputEl, errorEl, message) => {
+            if (!inputEl || !errorEl) return;
+            if (message) {
+                errorEl.textContent = message;
+                errorEl.classList.remove("hidden");
+                inputEl.classList.add("border-red-400");
+                inputEl.setAttribute("aria-invalid", "true");
+            } else {
+                errorEl.textContent = "";
+                errorEl.classList.add("hidden");
+                inputEl.classList.remove("border-red-400");
+                inputEl.removeAttribute("aria-invalid");
+            }
+        };
+
+        // Normaliza el teléfono al formato internacional E.164 (ej. +5491139583670)
+        // Si el usuario no ingresó código de país (+), asume Argentina (+54).
+        const normalizePhoneE164 = (rawPhone) => {
+            const trimmed = (rawPhone || "").trim();
+            const hasPlus = trimmed.startsWith("+");
+            let digits = trimmed.replace(/\D/g, "");
+
+            if (!digits) return "";
+
+            if (hasPlus) {
+                return "+" + digits;
+            }
+            if (trimmed.startsWith("00")) {
+                return "+" + digits.slice(2);
+            }
+            if (digits.startsWith("54") && digits.length >= 11) {
+                return "+" + digits;
+            }
+            // Quitar prefijo local 0 si existe (ej. 011 -> 11)
+            if (digits.startsWith("0")) {
+                digits = digits.slice(1);
+            }
+            return "+54" + digits;
+        };
+
+        const isValidEmail = (email) => {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        };
+
+        const validateForm = () => {
+            let valid = true;
+            const nombreVal = (nombreInput.value || "").trim();
+            const emailVal = (emailInput.value || "").trim();
+            const telVal = (telefonoInput.value || "").trim();
+            const telDigits = telVal.replace(/\D/g, "");
+
+            if (!nombreVal || nombreVal.length < 2) {
+                setFieldError(nombreInput, errorNombre, "Por favor, ingresá tu nombre completo.");
+                valid = false;
+            } else {
+                setFieldError(nombreInput, errorNombre, "");
+            }
+
+            if (!emailVal || !isValidEmail(emailVal)) {
+                setFieldError(emailInput, errorEmail, "Por favor, ingresá un email válido (ej. nombre@correo.com).");
+                valid = false;
+            } else {
+                setFieldError(emailInput, errorEmail, "");
+            }
+
+            if (!telVal || telDigits.length < 8) {
+                setFieldError(telefonoInput, errorTelefono, "Por favor, ingresá un número de teléfono válido con código de área.");
+                valid = false;
+            } else {
+                setFieldError(telefonoInput, errorTelefono, "");
+            }
+
+            return valid;
+        };
+
+        [
+            [nombreInput, errorNombre],
+            [emailInput, errorEmail],
+            [telefonoInput, errorTelefono]
+        ].forEach(([inputEl, errEl]) => {
+            if (inputEl) {
+                inputEl.addEventListener("input", () => setFieldError(inputEl, errEl, ""));
+            }
+        });
+
+        leadForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            if (statusBox) {
+                statusBox.className = "hidden rounded-sm p-4 text-xs sm:text-sm";
+                statusBox.textContent = "";
+            }
+
+            // Filtro Honeypot silencioso contra bots
+            if (honeypotInput && honeypotInput.value.trim() !== "") {
+                leadForm.reset();
+                return;
+            }
+
+            if (!validateForm()) {
+                return;
+            }
+
+            const normalizedEmail = emailInput.value.trim().toLowerCase();
+            const normalizedPhone = normalizePhoneE164(telefonoInput.value);
+
+            submitBtn.disabled = true;
+            submitBtn.setAttribute("aria-busy", "true");
+            if (submitText) submitText.textContent = "Enviando...";
+
+            try {
+                const payload = {
+                    nombre: nombreInput.value.trim(),
+                    email: normalizedEmail,
+                    telefono: normalizedPhone,
+                    zona_interes: zonaInput ? zonaInput.value : "",
+                    mensaje: mensajeInput ? mensajeInput.value.trim() : ""
+                };
+
+                const response = await fetch(FORMSPREE_ENDPOINT, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error("Error en el envío del formulario");
+                }
+
+                // Disparo de evento para Google Tag Manager / Google Ads Enhanced Conversions for Leads
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: "generate_lead",
+                    user_data: {
+                        email: normalizedEmail,
+                        phone_number: normalizedPhone
+                    }
+                });
+
+                leadForm.reset();
+                if (statusBox) {
+                    statusBox.className = "rounded-sm p-4 text-xs sm:text-sm bg-accent-teal/15 border border-accent-teal text-white";
+                    statusBox.textContent = "¡Gracias! Recibimos tus datos correctamente. El equipo del Dr. Leandro Vila se pondrá en contacto con vos a la brevedad.";
+                }
+            } catch (err) {
+                if (statusBox) {
+                    statusBox.className = "rounded-sm p-4 text-xs sm:text-sm bg-red-950/60 border border-red-400 text-red-200";
+                    statusBox.textContent = "No pudimos enviar el formulario en este momento. Por favor verificá tu conexión o escribinos directamente por WhatsApp.";
+                }
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.removeAttribute("aria-busy");
+                if (submitText) submitText.textContent = "Enviar solicitud";
+            }
+        });
+    }
 });
