@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+  }
+
+  /* 5.1 Garantizar área táctil mínima de 44x44 px en controles interactivos */
+  a,
+  button,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"],
+  select {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  nav a,
+  footer a {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.teal-glow {
+  box-shadow: 0 8px 30px rgba(46, 196, 182, 0.25);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

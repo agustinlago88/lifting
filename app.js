@@ -1,6 +1,92 @@
 let revealObserver;
 
 document.addEventListener("DOMContentLoaded", () => {
+    // 1.1 & 1.2 Hero Video: cargar solo en pantallas >= 768px y una única vez
+    const heroVideo = document.getElementById("video-fondo");
+    if (heroVideo && window.matchMedia("(min-width: 768px)").matches && !heroVideo.dataset.loaded) {
+        const source = heroVideo.querySelector("source[data-src]");
+        if (source && source.dataset.src) {
+            heroVideo.dataset.loaded = "true";
+            source.src = source.dataset.src;
+            heroVideo.load();
+            heroVideo.play().catch(() => {});
+        }
+    }
+
+    // 6.1 & 6.2 Banner de Consentimiento de Cookies y señal consent_update para GTM Consent Mode v2
+    const CONSENT_STORAGE_KEY = "vila_cookie_consent";
+    const cookieBanner = document.getElementById("cookie-consent-banner");
+    const btnAcceptAll = document.getElementById("cookie-btn-accept-all");
+    const btnRejectAll = document.getElementById("cookie-btn-reject-all");
+    const btnCustomize = document.getElementById("cookie-btn-customize");
+    const btnSaveCustom = document.getElementById("cookie-btn-save-custom");
+    const customPanel = document.getElementById("cookie-custom-panel");
+    const chkAnalytics = document.getElementById("cookie-chk-analytics");
+    const chkMarketing = document.getElementById("cookie-chk-marketing");
+
+    const pushConsentUpdate = (consentObj) => {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: "consent_update",
+            analytics_storage: consentObj.analytics_storage,
+            ad_storage: consentObj.ad_storage,
+            ad_user_data: consentObj.ad_user_data,
+            ad_personalization: consentObj.ad_personalization
+        });
+    };
+
+    const saveAndApplyConsent = (analyticsGranted, marketingGranted) => {
+        const consentObj = {
+            analytics_storage: analyticsGranted ? "granted" : "denied",
+            ad_storage: marketingGranted ? "granted" : "denied",
+            ad_user_data: marketingGranted ? "granted" : "denied",
+            ad_personalization: marketingGranted ? "granted" : "denied",
+            updated_at: new Date().toISOString()
+        };
+        try {
+            localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(consentObj));
+        } catch (e) {}
+        pushConsentUpdate(consentObj);
+        if (cookieBanner) {
+            cookieBanner.classList.add("hidden");
+        }
+    };
+
+    try {
+        const savedRaw = localStorage.getItem(CONSENT_STORAGE_KEY);
+        if (savedRaw) {
+            const savedConsent = JSON.parse(savedRaw);
+            pushConsentUpdate(savedConsent);
+        } else if (cookieBanner) {
+            cookieBanner.classList.remove("hidden");
+        }
+    } catch (e) {
+        if (cookieBanner) {
+            cookieBanner.classList.remove("hidden");
+        }
+    }
+
+    if (btnAcceptAll) {
+        btnAcceptAll.addEventListener("click", () => saveAndApplyConsent(true, true));
+    }
+    if (btnRejectAll) {
+        btnRejectAll.addEventListener("click", () => saveAndApplyConsent(false, false));
+    }
+    if (btnCustomize && customPanel) {
+        btnCustomize.addEventListener("click", () => {
+            const isHidden = customPanel.classList.contains("hidden");
+            customPanel.classList.toggle("hidden", !isHidden);
+            btnCustomize.setAttribute("aria-expanded", isHidden ? "true" : "false");
+        });
+    }
+    if (btnSaveCustom) {
+        btnSaveCustom.addEventListener("click", () => {
+            const ana = chkAnalytics ? chkAnalytics.checked : false;
+            const mkt = chkMarketing ? chkMarketing.checked : false;
+            saveAndApplyConsent(ana, mkt);
+        });
+    }
+
     // Intersection Observer para animaciones Reveal suaves
     revealObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -127,12 +213,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-
-
     // ============================================================================
     // CONFIGURACIÓN DE FORMSPREE PARA EL FORMULARIO DE CONTACTO
-    // IMPORTANTE: REEMPLAZAR TU_FORM_ID por el ID real de Formspree antes de publicar
-    // Ejemplo: const FORMSPREE_ENDPOINT = "https://formspree.io/f/xabcdefg";
     // ============================================================================
     const FORMSPREE_ENDPOINT = "https://formspree.io/f/myeweapl";
 
@@ -143,11 +225,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const telefonoInput = document.getElementById("lead-telefono");
         const zonaInput = document.getElementById("lead-zona");
         const mensajeInput = document.getElementById("lead-mensaje");
+        const consentInput = document.getElementById("lead-consent");
         const honeypotInput = document.getElementById("lead-website");
 
         const errorNombre = document.getElementById("error-nombre");
         const errorEmail = document.getElementById("error-email");
         const errorTelefono = document.getElementById("error-telefono");
+        const errorConsent = document.getElementById("error-consent");
         const statusBox = document.getElementById("form-status-message");
         const submitBtn = document.getElementById("lead-submit-btn");
         const submitText = document.getElementById("lead-submit-text");
@@ -224,6 +308,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 setFieldError(telefonoInput, errorTelefono, "");
             }
 
+            if (consentInput && !consentInput.checked) {
+                setFieldError(consentInput, errorConsent, "Debés aceptar la Política de Privacidad para enviar tu consulta.");
+                valid = false;
+            } else if (consentInput) {
+                setFieldError(consentInput, errorConsent, "");
+            }
+
             return valid;
         };
 
@@ -237,11 +328,15 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
+        if (consentInput) {
+            consentInput.addEventListener("change", () => setFieldError(consentInput, errorConsent, ""));
+        }
+
         leadForm.addEventListener("submit", async (e) => {
             e.preventDefault();
 
             if (statusBox) {
-                statusBox.className = "hidden rounded-sm p-4 text-xs sm:text-sm";
+                statusBox.className = "hidden rounded-sm p-4 text-sm";
                 statusBox.textContent = "";
             }
 
@@ -296,12 +391,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 leadForm.reset();
                 if (statusBox) {
-                    statusBox.className = "rounded-sm p-4 text-xs sm:text-sm bg-accent-teal/15 border border-accent-teal text-white";
+                    statusBox.className = "rounded-sm p-4 text-sm bg-accent-teal/15 border border-accent-teal text-white";
                     statusBox.textContent = "¡Gracias! Recibimos tus datos correctamente. El equipo del Dr. Leandro Vila se pondrá en contacto con vos a la brevedad.";
                 }
             } catch (err) {
                 if (statusBox) {
-                    statusBox.className = "rounded-sm p-4 text-xs sm:text-sm bg-red-950/60 border border-red-400 text-red-200";
+                    statusBox.className = "rounded-sm p-4 text-sm bg-red-950/60 border border-red-400 text-red-200";
                     statusBox.textContent = "No pudimos enviar el formulario en este momento. Por favor verificá tu conexión o escribinos directamente por WhatsApp.";
                 }
             } finally {

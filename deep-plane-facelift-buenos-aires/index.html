@@ -21,11 +21,11 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+try{if(localStorage.getItem('vila_cookie_consent')){var _c=JSON.parse(localStorage.getItem('vila_cookie_consent'));fbq('consent',_c.ad_storage==='granted'?'grant':'revoke');}else{fbq('consent','revoke');}}catch(e){fbq('consent','revoke');}
 fbq('init', '1363463228952376');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt=""></noscript>
+<noscript><img height="1" width="1" decoding="async" style="display:none" src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt="Pixel de seguimiento de conversiones de Meta - Dr. Leandro Vila"></noscript>
 <!-- End Meta Pixel -->
 
     <!--Clientify Tracking Begins-->
@@ -66,48 +66,22 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    screens: { 'xs': '480px' },
-                    colors: {
-                        surface: "#1c1b1b",
-                        "surface-container-low": "#131313",
-                        "surface-container-high": "#282828",
-                        primary: "#2EC4B6",
-                        "on-primary": "#003531",
-                        secondary: "#c8c6c6",
-                        outline: "#3c4947",
-                        "on-surface": "#e5e2e1",
-                        "on-surface-variant": "#c4c6cf",
-                        "accent-teal": "#2EC4B6"
-                    },
-                    fontFamily: {
-                        montserrat: ["Montserrat", "sans-serif"]
-                    }
-                }
-            }
-        };
-    </script>
     <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="bg-surface text-on-surface selection:bg-accent-teal selection:text-on-primary">
+<body class="bg-surface text-on-surface selection:bg-accent-teal selection:text-on-primary overflow-x-hidden">
     <nav class="fixed top-0 w-full z-50 bg-[#1c1b1b]/95 backdrop-blur-md border-b border-outline/15">
         <div class="flex justify-between items-center max-w-6xl mx-auto px-4 sm:px-6 py-3.5 gap-3">
             <a href="../" class="font-montserrat font-bold text-white text-base sm:text-lg tracking-tight hover:text-accent-teal transition-colors">
                 Dr. Leandro Vila
             </a>
             <div class="hidden md:flex items-center gap-6">
-                <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal" href="../">Inicio</a>
-                <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-accent-teal border-b border-accent-teal pb-0.5" href="#faq">FAQ Deep Plane</a>
-                <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal" href="#video">Video</a>
-                <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal" href="#instagram">Instagram</a>
-                <a class="font-montserrat uppercase text-[0.7rem] tracking-wider text-[#c8c6c6] hover:text-accent-teal" href="../#dr-vila">Dr. Vila</a>
+                <a class="font-montserrat uppercase text-sm tracking-wider text-[#c8c6c6] hover:text-accent-teal" href="../">Inicio</a>
+                <a class="font-montserrat uppercase text-sm tracking-wider text-accent-teal border-b border-accent-teal pb-0.5" href="#faq">FAQ Deep Plane</a>
+                <a class="font-montserrat uppercase text-sm tracking-wider text-[#c8c6c6] hover:text-accent-teal" href="#video">Video</a>
+                <a class="font-montserrat uppercase text-sm tracking-wider text-[#c8c6c6] hover:text-accent-teal" href="https://www.instagram.com/drleandrovila/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a class="font-montserrat uppercase text-sm tracking-wider text-[#c8c6c6] hover:text-accent-teal" href="../#dr-vila">Dr. Vila</a>
             </div>
-            <a href="https://wa.me/5491139583670?text=Hola%2C%20vengo%20de%20la%20web%20de%20Lifting." data-ref="deep-plane-nav" class="bg-accent-teal text-on-primary px-4 py-2 rounded-sm text-xs uppercase tracking-wider font-bold hover:brightness-110 transition-all">
+            <a href="https://wa.me/5491139583670?text=Hola%2C%20vengo%20de%20la%20web%20de%20Lifting." data-ref="deep-plane-nav" class="bg-accent-teal text-on-primary px-4 py-2 rounded-sm text-sm uppercase tracking-wider font-bold hover:brightness-110 transition-all">
                 Consultar
             </a>
         </div>
@@ -117,7 +91,7 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
         <!-- Resumen Especifico Deep Plane -->
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7 space-y-4">
-                <span class="font-montserrat text-[0.68rem] uppercase tracking-[0.3em] text-accent-teal block font-semibold">Cirugía Facial de Plano Profundo</span>
+                <span class="font-montserrat text-sm uppercase tracking-[0.3em] text-accent-teal block font-semibold">Cirugía Facial de Plano Profundo</span>
                 <h1 class="font-montserrat text-3xl sm:text-4xl text-white font-extrabold leading-tight">
                     Deep Plane Facelift en Buenos Aires
                 </h1>
@@ -125,17 +99,18 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
                     El <strong class="text-white font-semibold">Deep Plane Facelift</strong> actúa por debajo del plano muscular profundo (<strong class="text-white font-semibold">SMAS</strong>), liberando los ligamentos de retención faciales para reposicionar en bloque pómulos, surcos nasogenianos, mandíbula (<strong class="text-white font-semibold">jowls</strong>) y cuello sin generar tensión en la piel.
                 </p>
                 <div class="pt-2 flex flex-wrap gap-3">
-                    <a href="https://wa.me/5491139583670?text=Hola%2C%20vengo%20de%20la%20web%20de%20Lifting." data-ref="deep-plane-cta" class="bg-accent-teal text-on-primary px-6 py-3 rounded-sm text-xs uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all">
+                    <a href="https://wa.me/5491139583670?text=Hola%2C%20vengo%20de%20la%20web%20de%20Lifting." data-ref="deep-plane-cta" class="bg-accent-teal text-on-primary px-6 py-3 rounded-sm text-sm uppercase tracking-widest font-black teal-glow hover:brightness-110 transition-all">
                         Solicitar evaluación por WhatsApp
                     </a>
-                    <a href="../#dr-vila" class="border border-outline/40 text-white hover:border-accent-teal hover:text-accent-teal px-6 py-3 rounded-sm text-xs uppercase tracking-widest font-semibold transition-all">
+                    <a href="../#dr-vila" class="border border-outline/40 text-white hover:border-accent-teal hover:text-accent-teal px-6 py-3 rounded-sm text-sm uppercase tracking-widest font-semibold transition-all">
                         Ver Biografía del Dr. Vila
                     </a>
                 </div>
+                <p class="text-sm text-on-surface-variant font-light pt-1">Atención presencial en CABA: consultá dirección, horarios y teléfonos en nuestra sección de <a href="../contacto/" class="text-accent-teal underline hover:brightness-110 font-medium min-h-[44px] inline-flex items-center">contacto en Puerto Madero</a>.</p>
             </div>
             <div class="lg:col-span-5 flex justify-center">
                 <div class="relative overflow-hidden rounded-sm border border-outline/30 bg-[#111] shadow-2xl max-w-[320px] w-full">
-                    <img src="../deep-plane-lifting.jpg" alt="Deep Plane Facelift Antes y Después - Dr. Leandro Vila" class="w-full h-auto object-cover">
+                    <picture><source srcset="../deep-plane-lifting.webp" type="image/webp"><img src="../deep-plane-lifting.jpg" alt="Deep Plane Facelift Antes y Después - Dr. Leandro Vila" class="w-full h-auto object-cover" width="1440" height="1795" decoding="async" loading="lazy"></picture>
                 </div>
             </div>
         </section>
@@ -147,34 +122,34 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
             </h2>
             <div class="space-y-3">
                 <div class="faq-item border border-outline/20 rounded-sm bg-surface-container-low overflow-hidden" data-faq-item>
-                    <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-xs sm:text-sm hover:text-accent-teal transition-colors" data-faq-toggle>
+                    <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-sm hover:text-accent-teal transition-colors" data-faq-toggle>
                         <span>¿Qué diferencia al Deep Plane del lifting tradicional y SMAS?</span>
                         <span class="material-symbols-outlined transform transition-transform duration-300 text-accent-teal text-lg" data-faq-icon>expand_more</span>
                     </button>
                     <div class="faq-answer max-h-0 transition-all duration-500 ease-in-out overflow-hidden" data-faq-content>
-                        <div class="px-5 pb-4 text-on-surface-variant font-light text-xs sm:text-sm border-t border-outline/10 pt-3">
+                        <div class="px-5 pb-4 text-on-surface-variant font-light text-sm border-t border-outline/10 pt-3">
                             El lifting tradicional tracciona la piel y la plicatura de SMAS pliega el músculo sin liberar anclajes profundos. El Deep Plane ingresa bajo el SMAS y libera los ligamentos retenedores, reposicionando tejidos profundos sin tirantez cutánea.
                         </div>
                     </div>
                 </div>
                 <div class="faq-item border border-outline/20 rounded-sm bg-surface-container-low overflow-hidden" data-faq-item>
-                    <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-xs sm:text-sm hover:text-accent-teal transition-colors" data-faq-toggle>
+                    <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-sm hover:text-accent-teal transition-colors" data-faq-toggle>
                         <span>¿Cuál es la diferencia entre Lifting Endoscópico y Deep Plane Endoscópico?</span>
                         <span class="material-symbols-outlined transform transition-transform duration-300 text-accent-teal text-lg" data-faq-icon>expand_more</span>
                     </button>
                     <div class="faq-answer max-h-0 transition-all duration-500 ease-in-out overflow-hidden" data-faq-content>
-                        <div class="px-5 pb-4 text-on-surface-variant font-light text-xs sm:text-sm border-t border-outline/10 pt-3">
+                        <div class="px-5 pb-4 text-on-surface-variant font-light text-sm border-t border-outline/10 pt-3">
                             Ambos utilizan instrumental endoscópico: el Lifting Endoscópico trata el tercio superior (frente, cejas y mirada), mientras que el Deep Plane Facelift Endoscópico trata tercio medio, mandíbula (jowls) y cuello.
                         </div>
                     </div>
                 </div>
                 <div class="faq-item border border-outline/20 rounded-sm bg-surface-container-low overflow-hidden" data-faq-item>
-                    <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-xs sm:text-sm hover:text-accent-teal transition-colors" data-faq-toggle>
+                    <button class="w-full flex justify-between items-center gap-4 px-5 py-3.5 text-left text-white font-montserrat font-bold text-sm hover:text-accent-teal transition-colors" data-faq-toggle>
                         <span>¿Qué zonas trata, cómo son las cicatrices y cuánto lleva la recuperación?</span>
                         <span class="material-symbols-outlined transform transition-transform duration-300 text-accent-teal text-lg" data-faq-icon>expand_more</span>
                     </button>
                     <div class="faq-answer max-h-0 transition-all duration-500 ease-in-out overflow-hidden" data-faq-content>
-                        <div class="px-5 pb-4 text-on-surface-variant font-light text-xs sm:text-sm border-t border-outline/10 pt-3">
+                        <div class="px-5 pb-4 text-on-surface-variant font-light text-sm border-t border-outline/10 pt-3">
                             Trata pómulos, surcos nasogenianos, mandíbula y cuello. Las incisiones se ocultan en el contorno natural de la oreja y línea capilar, evolucionando de forma imperceptible. El retorno a actividades de oficina es de 10 a 14 días.
                         </div>
                     </div>
@@ -204,31 +179,87 @@ src="https://www.facebook.com/tr?id=1363463228952376&ev=PageView&noscript=1" alt
         <section id="instagram" class="pt-10 border-t border-outline/15">
             <div class="flex items-center justify-between gap-4 mb-6">
                 <h2 class="font-montserrat text-2xl text-white font-bold">Publicaciones en Instagram · @drleandrovila</h2>
-                <a href="https://www.instagram.com/drleandrovila/" target="_blank" rel="noopener noreferrer" class="text-xs text-accent-teal hover:underline font-bold">Ver Instagram →</a>
+                <a href="https://www.instagram.com/drleandrovila/" target="_blank" rel="noopener noreferrer" class="text-sm text-accent-teal hover:underline font-bold">Ver Instagram →</a>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <a href="https://www.instagram.com/drleandrovila/" target="_blank" rel="noopener noreferrer" class="block rounded-sm overflow-hidden border border-outline/20 hover:border-accent-teal">
-                    <img src="../deep-plane-lifting.jpg" alt="Deep Plane Lifting Instagram" class="w-full aspect-[4/5] object-cover" loading="lazy">
+                    <picture><source srcset="../deep-plane-lifting.webp" type="image/webp"><img src="../deep-plane-lifting.jpg" alt="Deep Plane Lifting Instagram" class="w-full aspect-[4/5] object-cover" width="1440" height="1795" decoding="async" loading="lazy"></picture>
                 </a>
                 <a href="https://www.instagram.com/drleandrovila/" target="_blank" rel="noopener noreferrer" class="block rounded-sm overflow-hidden border border-outline/20 hover:border-accent-teal">
-                    <img src="../pony-rino.jpg" alt="Ponytail Lift Instagram" class="w-full aspect-[4/5] object-cover" loading="lazy">
+                    <picture><source srcset="../pony-rino.webp" type="image/webp"><img src="../pony-rino.jpg" alt="Ponytail Lift Instagram" class="w-full aspect-[4/5] object-cover" width="1080" height="1350" decoding="async" loading="lazy"></picture>
                 </a>
                 <a href="https://www.instagram.com/drleandrovila/" target="_blank" rel="noopener noreferrer" class="block rounded-sm overflow-hidden border border-outline/20 hover:border-accent-teal">
-                    <img src="../endoscopic-lifting.jpeg" alt="Lifting Endoscópico Masculino Instagram" class="w-full aspect-[4/5] object-cover" loading="lazy">
+                    <picture><source srcset="../endoscopic-lifting.webp" type="image/webp"><img src="../endoscopic-lifting.jpeg" alt="Lifting Endoscópico Masculino Instagram" class="w-full aspect-[4/5] object-cover" width="1280" height="640" decoding="async" loading="lazy"></picture>
                 </a>
                 <a href="https://www.instagram.com/drleandrovila/" target="_blank" rel="noopener noreferrer" class="block rounded-sm overflow-hidden border border-outline/20 hover:border-accent-teal">
-                    <img src="../consul.jpg" alt="Consultorio Dr. Leandro Vila Instagram" class="w-full aspect-[4/5] object-cover" loading="lazy">
+                    <picture><source srcset="../consul.webp" type="image/webp"><img src="../consul.jpg" alt="Consultorio Dr. Leandro Vila Instagram" class="w-full aspect-[4/5] object-cover" width="1080" height="1350" decoding="async" loading="lazy"></picture>
                 </a>
             </div>
         </section>
     </main>
 
     <footer class="bg-[#111] w-full py-8 px-4 sm:px-6 border-t border-[#3c4947]/15">
-        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-[#c8c6c6]">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-[#c8c6c6]">
             <p>© 2024 Dr. Leandro Vila (M.N. 147814) · Miembro Titular SACPER · Puerto Madero, CABA.</p>
-            <a href="../" class="text-accent-teal hover:underline">← Volver a la página principal</a>
+            <div class="flex flex-wrap items-center gap-4"><a href="../politica-de-privacidad/" class="text-accent-teal hover:underline min-h-[44px] inline-flex items-center">Política de Privacidad</a><a href="../" class="text-accent-teal hover:underline min-h-[44px] inline-flex items-center">← Volver a la página principal</a></div>
         </div>
     </footer>
+    <!-- Banner de Consentimiento de Cookies -->
+    <aside id="cookie-consent-banner" class="fixed bottom-0 inset-x-0 z-50 bg-[#131313]/98 border-t border-outline/30 p-4 sm:p-6 shadow-2xl hidden" role="dialog" aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-desc">
+        <div class="max-w-5xl mx-auto space-y-4">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                <div class="space-y-1.5 max-w-2xl">
+                    <h2 id="cookie-banner-title" class="font-montserrat text-base text-white font-bold">Configuración de privacidad y cookies</h2>
+                    <p id="cookie-banner-desc" class="text-sm text-on-surface-variant font-light leading-relaxed">
+                        Utilizamos cookies propias y de terceros para analizar la navegación y medir campañas publicitarias. Podés aceptar todas, rechazarlas o personalizar tus preferencias. Consultá nuestra <a href="/politica-de-privacidad/" class="text-accent-teal underline hover:brightness-110 inline-flex items-center min-h-[44px] px-1">Política de Privacidad</a>.
+                    </p>
+                </div>
+                <div class="flex flex-wrap items-center gap-2.5 shrink-0">
+                    <button type="button" id="cookie-btn-accept-all" class="min-h-[44px] min-w-[44px] px-5 py-2.5 rounded-sm bg-accent-teal text-on-primary font-montserrat text-sm uppercase tracking-wider font-bold hover:brightness-110 transition-all">
+                        Aceptar todo
+                    </button>
+                    <button type="button" id="cookie-btn-reject-all" class="min-h-[44px] min-w-[44px] px-5 py-2.5 rounded-sm border border-outline/40 text-white font-montserrat text-sm uppercase tracking-wider font-semibold hover:border-accent-teal transition-all">
+                        Rechazar todo
+                    </button>
+                    <button type="button" id="cookie-btn-customize" aria-expanded="false" aria-controls="cookie-custom-panel" class="min-h-[44px] min-w-[44px] px-5 py-2.5 rounded-sm border border-outline/30 text-on-surface-variant font-montserrat text-sm uppercase tracking-wider font-medium hover:text-white hover:border-white/40 transition-all">
+                        Personalizar
+                    </button>
+                </div>
+            </div>
+
+            <!-- Panel desplegable de personalización -->
+            <div id="cookie-custom-panel" class="hidden pt-4 border-t border-outline/20 space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+                    <div class="p-3.5 rounded-sm bg-surface border border-outline/20">
+                        <div class="flex items-center justify-between gap-2 font-montserrat font-semibold text-white">
+                            <span>Cookies técnicas</span>
+                            <span class="text-sm text-accent-teal">Siempre activas</span>
+                        </div>
+                        <p class="text-sm text-on-surface-variant font-light mt-1">Necesarias para el funcionamiento básico y guardar tu preferencia de privacidad.</p>
+                    </div>
+                    <label for="cookie-chk-analytics" class="p-3.5 rounded-sm bg-surface border border-outline/20 cursor-pointer block">
+                        <div class="flex items-center justify-between gap-2 font-montserrat font-semibold text-white min-h-[44px]">
+                            <span>Analítica (GA4)</span>
+                            <input type="checkbox" id="cookie-chk-analytics" class="w-5 h-5 rounded-sm text-accent-teal focus:ring-accent-teal bg-surface-container-low border-outline/50">
+                        </div>
+                        <p class="text-sm text-on-surface-variant font-light mt-1">Permiten medir visitas y rendimiento del sitio de forma estadística (`analytics_storage`).</p>
+                    </label>
+                    <label for="cookie-chk-marketing" class="p-3.5 rounded-sm bg-surface border border-outline/20 cursor-pointer block">
+                        <div class="flex items-center justify-between gap-2 font-montserrat font-semibold text-white min-h-[44px]">
+                            <span>Marketing y Publicidad</span>
+                            <input type="checkbox" id="cookie-chk-marketing" class="w-5 h-5 rounded-sm text-accent-teal focus:ring-accent-teal bg-surface-container-low border-outline/50">
+                        </div>
+                        <p class="text-sm text-on-surface-variant font-light mt-1">Medición de anuncios y remarketing en Google Ads y Meta (`ad_storage`, `ad_user_data`, `ad_personalization`).</p>
+                    </label>
+                </div>
+                <div class="flex justify-end">
+                    <button type="button" id="cookie-btn-save-custom" class="min-h-[44px] min-w-[44px] px-6 py-2.5 rounded-sm bg-accent-teal text-on-primary font-montserrat text-sm uppercase tracking-wider font-bold hover:brightness-110 transition-all">
+                        Guardar preferencias
+                    </button>
+                </div>
+            </div>
+        </div>
+    </aside>
     <script src="../app.js" defer></script>
     <script src="/meta-tracking.js" defer></script>
 </body>
